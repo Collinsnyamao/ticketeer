@@ -2,114 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/css/ajax-loader.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/et-line.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/fonts/slick.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/fonts/slick.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/fonts/slick.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/fonts/slick.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/ionicons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/et-line.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/et-line.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/et-line.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/et-line.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/ionicons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/ionicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/ionicons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/bg/bg-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/bg/inner_cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/bg/slider.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/bg/tickets.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/blog1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/blog2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/blog3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/instagram/inst1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/instagram/inst2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/instagram/inst3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/instagram/inst4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/instagram/inst5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/blog/instagram/inst6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/b1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/b2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/b3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/b4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/brands/b5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cleander/c1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cleander/c2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cleander/c3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/events/event1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/events/event2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/events/event3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/logo-dark.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/speakers/s1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/speakers/s10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/speakers/s2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/speakers/s3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/speakers/s4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/speakers/s5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/speakers/s6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/speakers/s7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/speakers/s8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/speakers/s9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/bootstrap-progressbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery-migrate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.countdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.counterup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/parallax.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/popper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/wow.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/base/_base.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/base/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_blog_box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_contact.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_counter.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_cover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_event_box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_icon_boxes.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_price_box.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_progressbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_speaker.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_tabs.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/components/_testimonial.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/layout/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/events.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/news.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/speakers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Images/event_demo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tick.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tick.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/speakers.html" beforeDir="false" afterPath="$PROJECT_DIR$/speakers.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,12 +24,43 @@
       <executable />
     </execution>
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5499" />
+            <state relative-caret-position="399">
+              <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/events.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="317" column="45" selection-start-line="317" selection-start-column="45" selection-end-line="317" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/speakers.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="292">
+              <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#7527#17437#0" />
+                <element signature="e#17491#17835#0" />
+                <element signature="e#17893#18752#0" />
+                <element signature="e#18806#23108#0" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -140,6 +73,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/store.html" />
+        <option value="$PROJECT_DIR$/index2.html" />
+        <option value="$PROJECT_DIR$/events.html" />
+        <option value="$PROJECT_DIR$/speakers.html" />
       </list>
     </option>
   </component>
@@ -172,6 +108,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -200,17 +142,17 @@
       <updated>1562873912305</updated>
       <workItem from="1562873916688" duration="218000" />
       <workItem from="1562924559167" duration="531000" />
-      <workItem from="1563477116777" duration="332000" />
+      <workItem from="1563477116777" duration="7514000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1081000" />
+    <option name="totallyTimeSpent" value="8263000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <layout>
-      <window_info id="Learn" />
+      <window_info id="Learn" weight="0.32956383" />
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
@@ -254,7 +196,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5499" />
+        <state relative-caret-position="399">
+          <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/events.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="317" column="45" selection-start-line="317" selection-start-column="45" selection-end-line="317" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/speakers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7527#17437#0" />
+            <element signature="e#17491#17835#0" />
+            <element signature="e#17893#18752#0" />
+            <element signature="e#18806#23108#0" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

@@ -14,6 +14,9 @@
     <!-- ========== STYLESHEETS ========== -->
     <!-- Bootstrap CSS -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+    <link rel="stylesheet" href="node_modules/timepicker/jquery.timepicker.min.css">
+
     <!-- Fonts Icon CSS -->
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/et-line.css" rel="stylesheet">
@@ -44,19 +47,13 @@
         <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
             <ul class=" nav navbar-nav menu">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link active" href="index2.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Speakers</a>
+                    <a class="nav-link " href="events.html">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Contact</a>
+                    <a class="nav-link " href="contact.html">Contact</a>
                 </li>
                 <li class="search_btn">
                     <a  href="#">
@@ -105,17 +102,61 @@
 
         <div class="row justify-content-center">
             <div class="col-12 col-md-6">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing eli. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
-                </p>
+                <div class="row">
+                    <div class="col">
+                        <label for="filepick">Event Name</label>
+                        <input type="text" class="form-control" placeholder="Event name">
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="filepick">Date</label>
+                            <input type="text" class="form-control" id="datepick" placeholder="Event date">
+                        </div>
+                        <div class="col">
+                            <label for="filepick">Time</label>
+                            <input type="text" class="form-control" id="timepick" placeholder="Event time">
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="filepick">Event image</label>
+                        <input type="file" class="form-control" id="filepick" placeholder="Event time" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="filepick">Event Description</label>
+                        <textarea class="form-control" id="descriptionbox"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary">Submit Event</button>
+                    </div>
+                </div>
+
+
             </div>
             <div class="col-12 col-md-6">
-                <p>
-                    In rhoncus massa nec  sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod quis. Maecenas ornare, ex in malesuada tempus.
-                </p>
+                <div class="section_title">
+                    <h4>Events</h4>
+                </div>
+                <div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="Images/event_demo.jpg" style="height: 100px;">
+                        </div>
+                        <div class="col-md-9">
+                            <h6>Event Name</h6>
+                            <strong><i>date - time</i></strong>
+                            <p>In rhoncus massa nec sollicitudin. Ut hendrerit hendrerit nisl a accumsan.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row justify-content-center mt50">
+        <!--<div class="row justify-content-center mt50">
             <div class="col-12 col-md-6">
                 <div class="progress_container">
 
@@ -174,13 +215,13 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 </section>
 <!--about section end -->
 
 <!--speaker section-->
-<section class="pb100">
+<!--<section class="pb100">
     <div class="row justify-content-center no-gutters">
         <div class="col-md-3 col-sm-6">
             <div class="speaker_box">
@@ -400,12 +441,12 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <!--speaker section end -->
 
 
 <!--event countdown-->
-<section class="bg-gray pt100 pb100">
+<!--<section class="bg-gray pt100 pb100">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-10">
@@ -414,11 +455,11 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <!--evernt countdown end-->
 
 <!--get tickets section -->
-<section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/tickets.png');">
+<!--<section class="bg-img pt100 pb100" style="background-image: url('assets/img/bg/tickets.png');">
     <div class="container">
         <div class="section_title mb30">
             <h3 class="title color-light">
@@ -434,11 +475,11 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <!--get tickets section end-->
 
 <!--footer start -->
-<footer>
+<!--<footer>
     <div class="container">
         <div class="row justify-content-center">
 
@@ -535,7 +576,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer>-->
 <div class="copyright_footer">
     <div class="container">
         <div class="row justify-content-center">
@@ -586,5 +627,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="assets/js/wow.min.js"></script>
 <!-- Custom js -->
 <script src="assets/js/main.js"></script>
+<script src="node_modules/js-datepicker/dist/datepicker.min.js"></script>
+<script src="node_modules/timepicker/jquery.timepicker.min.js"></script>
+<script>
+    const pick = datepicker('#datepick',{});
+    $('#timepick').timepicker();
+</script>
 </body>
 </html>
