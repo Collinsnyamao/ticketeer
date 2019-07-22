@@ -2,12 +2,7 @@
   "database": {
     "rules": "database.rules.json"
   },
-  "firestore": {
-    "rules": "firestore.rules",
-    "indexes": "firestore.indexes.json"
-  },
   "hosting": {
-    "site": "ticketeer",
     "public": "/",
     "ignore": [
       "firebase.json",
