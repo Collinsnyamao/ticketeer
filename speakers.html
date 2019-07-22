@@ -104,35 +104,41 @@
             <div class="col-12 col-md-6">
                 <div class="row">
                     <div class="col">
-                        <label for="filepick">Event Name</label>
-                        <input type="text" class="form-control" placeholder="Event name">
+                        <label for="eventname">Event Name</label>
+                        <input type="text" class="form-control" id="eventname" placeholder="Event name">
                     </div>
                 </div>
                     <div class="row">
                         <div class="col">
-                            <label for="filepick">Date</label>
+                            <label for="datepick">Date</label>
                             <input type="text" class="form-control" id="datepick" placeholder="Event date">
                         </div>
                         <div class="col">
-                            <label for="filepick">Time</label>
+                            <label for="timepick">Time</label>
                             <input type="text" class="form-control" id="timepick" placeholder="Event time">
                         </div>
                     </div>
                 <div class="row">
                     <div class="col">
                         <label for="filepick">Event image</label>
-                        <input type="file" class="form-control" id="filepick" placeholder="Event time" >
+                        <input type="file" class="form-control" id="filepick" placeholder="Ticket Price" >
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <label for="filepick">Event Description</label>
-                        <textarea class="form-control" id="descriptionbox"></textarea>
+                        <label for="ticketprice">Event image</label>
+                        <input type="number" class="form-control" id="ticketprice" placeholder="Ticket Price" step="10" >
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <button class="btn btn-primary">Submit Event</button>
+                        <label for="eventdesc">Event Description</label>
+                        <textarea id="eventdesc" class="form-control" id="eventdesc"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button id="btnsubmitevent" class="btn btn-primary">Submit Event</button>
                     </div>
                 </div>
 
@@ -145,7 +151,7 @@
                 <div>
                     <div class="row">
                         <div class="col-md-3">
-                            <img src="Images/event_demo.jpg" style="height: 100px;">
+                            <img src="Images/event_demo.jpg" id="recepientTag" style="height: 100px;">
                         </div>
                         <div class="col-md-9">
                             <h6>Event Name</h6>
@@ -633,5 +639,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     const pick = datepicker('#datepick',{});
     $('#timepick').timepicker();
 </script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAynvkUC2H3xOiPFjDIXuf4u0o6CWEbtDQ",
+        authDomain: "evento-1ec0f.firebaseapp.com",
+        databaseURL: "https://evento-1ec0f.firebaseio.com",
+        projectId: "evento-1ec0f",
+        storageBucket: "evento-1ec0f.appspot.com",
+        messagingSenderId: "262564078355",
+        appId: "1:262564078355:web:02e945955a4ffced"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
