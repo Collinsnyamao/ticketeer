@@ -76,5 +76,16 @@ function writeUserData(userId, userFullName, userBirthday, userGender, userEmail
         userEmail: userEmail
     }).then(function (success) {
         console.log("data added");
+
+        $.ajax({
+            type: "post",
+            method: "POST",
+            data: {uid:userId,bday:userBirthday,uemail:userEmail,userFullNames:userFullName,userGender:userGender},
+            url: "php/addUsers.php",
+            success: function (response) {
+                console.log('response3: '+ response);
+            }
+        });
+
     });
 }

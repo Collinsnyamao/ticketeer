@@ -148,18 +148,28 @@
                 <div class="section_title">
                     <h4>Events</h4>
                 </div>
-                <div>
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="images1/event_demo.jpg" id="recepientTag" style="height: 100px;">
+                <div id="eventsdiv">
+
+                    <?php require 'php/viewEvents.php'; ?>
+                    <!--<div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="images1/event_demo.jpg" id="recepientTag" style="height: 100px;">
+                            </div>
+                            <div class="col-md-9">
+                                <h6>Event Name</h6>
+                                <strong><i>date - time</i></strong>
+                                <p>In rhoncus massa nec sollicitudin. Ut hendrerit hendrerit nisl a accumsan.</p>
+                                Price :<strong> </strong>
+                            </div>
                         </div>
-                        <div class="col-md-9">
-                            <h6>Event Name</h6>
-                            <strong><i>date - time</i></strong>
-                            <p>In rhoncus massa nec sollicitudin. Ut hendrerit hendrerit nisl a accumsan.</p>
-                        </div>
-                    </div>
+                        <hr>
+                    </div>-->
+
+
+
                 </div>
+
             </div>
         </div>
         <!--<div class="row justify-content-center mt50">
@@ -643,6 +653,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-auth.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
