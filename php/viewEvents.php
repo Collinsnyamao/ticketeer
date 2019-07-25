@@ -18,13 +18,6 @@ if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
 
-        $params = array();
-        $params['access_token'] = '611ae5072f8e46904913c81f8c75a8dee1db3ae9';
-        $params['longUrl'] = $row['eventImageUrl'];
-        $params['domain'] = 'j.mp';
-        $results2 = bitly_get('shorten', $params);
-        var_dump($results2);
-
         echo "<div class='event_box'>
             <img src='".$row['eventImageUrl']."' style='height: 500px; width: 1110px;' alt='event'>
             <div class='event_info'>
