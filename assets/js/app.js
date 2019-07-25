@@ -2,6 +2,21 @@ var database = firebase.database();
 const ref = firebase.storage().ref('EventImages');
 
 
+function getShorter(url)
+{
+    var accessToken = '611ae5072f8e46904913c81f8c75a8dee1db3ae9';
+    var url = 'https://api-ssl.bitly.com/v3/shorten?access_token=' + accessToken + '&longUrl=' + encodeURIComponent(url);
+
+    $.getJSON(
+        url,
+        {},
+        function(response)
+        {
+            console.log(response.data.url);
+        }
+    );
+}
+
 
 
 function writeUserData(userId, eventName, eventDate, eventTime, eventImageUrl,eventPrice, eventDescription) {
@@ -15,10 +30,12 @@ function writeUserData(userId, eventName, eventDate, eventTime, eventImageUrl,ev
         eventDescription: eventDescription
     }).then(function () {
 
+        var shorterUrl = getShorter(eventImageUrl);
+
         $.ajax({
             type: "post",
             method: "POST",
-            data: {uid:userId,eventName:eventName,eventDescription:eventDescription,eventImageUrl:eventImageUrl,eventDate:eventDate,eventPrice:eventPrice,eventTime:eventTime},
+            data: {uid:userId,eventName:eventName,eventDescription:eventDescription,eventImageUrl:shorterUrl,eventDate:eventDate,eventPrice:eventPrice,eventTime:eventTime},
             url: "php/addEvent.php",
             success: function (response) {
                 console.log('response3: '+ response);
