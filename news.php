@@ -25,24 +25,6 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-    <style>
-        .image {
-            background: #34495e;
-            border: 1px solid #34495e;
-            width: 200px;
-            height: 200px;
-        }
-
-        .image-contain {
-            object-fit: contain;
-            object-position: center;
-        }
-
-        .image-cover {
-            object-fit: cover;
-            object-position: right top;
-        }
-    </style>
 </head>
 <body>
 <div class="loader">
@@ -62,13 +44,19 @@
         <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
             <ul class=" nav navbar-nav menu">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link active" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="events.html">Events</a>
+                    <a class="nav-link " href="#">Speakers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="contact.html">Contact</a>
+                    <a class="nav-link " href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contact</a>
                 </li>
                 <li class="search_btn">
                     <a  href="#">
@@ -89,7 +77,7 @@
             <div class="col-12">
                 <div class="inner_cover_content">
                     <h3>
-                       Events
+                        News
                     </h3>
                 </div>
             </div>
@@ -97,8 +85,8 @@
 
         <div class="breadcrumbs">
             <ul>
-                <li><a href="index.html">Home</a>  |   </li>
-                <li><span>Events</span></li>
+                <li><a href="#">Home</a>   |  </li>
+                <li><span>News</span></li>
             </ul>
         </div>
     </div>
@@ -109,34 +97,153 @@
 <!--events section -->
 <section class="pt100 pb100">
     <div class="container">
-
-        <div class="event_box">
-            <img src="assets/img/events/event1.png" alt="event">
-            <div class="event_info">
-                <div class="event_title">
-                    Los Angeles Event
-                </div>
-                <div class="speakers">
-                    <strong>Speakers</strong>
-                    <span>Maria Smith,  Gabriel Hernandez,  Michael Williams</span>
-                </div>
-                <div class="event_date">
-                    February 14, 2018
-                </div>
-            </div>
-            <div class="event_word">
-                <div class="row justify-content-center">
-                    <div class="col-md-12 col-12">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
+        <div class="row justify-content-center">
+            <!--blog section start -->
+            <div class="col-12 col-md-8">
+                <div class="blog_card">
+                    <img src="assets/img/blog/blog1.png" id="imageEvent" alt="blog News ">
+                    <div class="blog_box_data">
+                        <span class="blog_date">
+                            Dec 08, 2017
+                        </span>
+                        <div class="blog_meta">
+                            <span><a href="#">By Lore Papp</a></span>  | <span><a href="#">  in Business   </a></span>|  <span><a href="#">3 Comments</a></span>
+                        </div>
+                        <h5>
+                            Why you should invest your money into a good business
+                        </h5>
+                        <p class="blog_word">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
+                        </p>
+                        <a href="#" class="readmore_btn">Read More</a>
                     </div>
                 </div>
+
+
+
+
+                <!--pagenition menu-->
+                <!--<div class="mt70 mb70">
+                    <ul class="nav_menu">
+                        <li class="active"><span>01</span></li>
+                        <li><a href="#">02</a></li>
+                        <li><a href="#">03</a></li>
+                    </ul>
+                </div>-->
+                <!--pageintion -->
+
             </div>
-            <div class="row" style="margin-top: 25px;">
-                <button class="btn btn-primary btn-rounded">Buy Tickets</button>
+            <!--blog section end-->
+
+            <!--sidebar section -->
+            <div class="col-12 col-md-4">
+                <div class="sidebar">
+                    <!--<div class="widget widget_search">
+                        <div class="search-form">
+                            <input type="text" class="search-field" placeholder="Search">
+                        </div>
+                    </div>-->
+                    <!--<div class="widget widget_categories">
+                        <h4 class="widget-title">
+                            Archives
+                        </h4>
+                        <ul>
+                            <li><a href="#">March 2017</a></li>
+                            <li><a href="#">April 2017</a></li>
+                            <li><a href="#">May 2017</a></li>
+                            <li><a href="#">June 2017</a></li>
+                        </ul>
+                    </div>
+                    <div class="widget widget_categories">
+                        <h4 class="widget-title">
+                            Categories
+                        </h4>
+                        <ul>
+                            <li><a href="#">Uncategorized</a></li>
+                            <li><a href="#">Usefull Information</a></li>
+                            <li><a href="#">Events</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Conference & Press</a></li>
+                        </ul>
+                    </div>-->
+
+                    <div class="widget widget_latest_post">
+                        <h4 class="widget-title">
+                            Latest Posts
+                        </h4>
+                        <ul>
+                            <li>
+                                <div class="widget_recent_posts">
+                                    <img src="assets/img/blog/blog1.png" alt="news">
+                                    <div class="content">
+                                        <a href="#">Uncategorized</a>
+                                        <p>by Jane Smith / Aug 25, 2017</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget_recent_posts">
+                                    <img src="assets/img/blog/blog2.png" alt="news">
+                                    <div class="content">
+                                        <a href="#">Uncategorized</a>
+                                        <p>by Jane Smith / Aug 25, 2017</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget_recent_posts">
+                                    <img src="assets/img/blog/blog3.png" alt="news">
+                                    <div class="content">
+                                        <a href="#">Uncategorized</a>
+                                        <p>by Jane Smith / Aug 25, 2017</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="widget_recent_posts">
+                                    <img src="assets/img/blog/blog1.png" alt="news">
+                                    <div class="content">
+                                        <a href="#">Uncategorized</a>
+                                        <p>by Jane Smith / Aug 25, 2017</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="widget widget_instagram">
+                        <h4 class="widget-title">
+                            Instagram
+                        </h4>
+                        <ul>
+                            <li><a href="#"><img src="assets/img/blog/instagram/inst5.png" alt="instagram"></a></li>
+                            <li><a href="#"><img src="assets/img/blog/instagram/inst2.png" alt="instagram"></a></li>
+                            <li><a href="#"><img src="assets/img/blog/instagram/inst3.png" alt="instagram"></a></li>
+                            <li><a href="#"><img src="assets/img/blog/instagram/inst4.png" alt="instagram"></a></li>
+                            <li><a href="#"><img src="assets/img/blog/instagram/inst5.png" alt="instagram"></a></li>
+                            <li><a href="#"><img src="assets/img/blog/instagram/inst6.png" alt="instagram"></a></li>
+                        </ul>
+                    </div>
+                    <!--<div class="widget widget_tags">
+                        <h4 class="widget-title">
+                            Tags
+                        </h4>
+                        <ul>
+                            <li><a href="#">branding</a></li>
+                            <li><a href="#">identity</a></li>
+                            <li><a href="#">design</a></li>
+                            <li><a href="#">inspiration</a></li>
+                            <li><a href="#">web design</a></li>
+                            <li><a href="#">video</a></li>
+                            <li><a href="#">photography</a></li>
+                        </ul>
+                    </div>-->
+                </div>
             </div>
+            <!--sidebar section end -->
+
         </div>
-
-
     </div>
 </section>
 <!--event section end -->
@@ -273,13 +380,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             <div class="col-12 col-md-6 ">
                 <ul class="footer_menu">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
-                        <a href="events.html">Events</a>
+                        <a href="#">Speakers</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="#">Events</a>
+                    </li>
+                    <li>
+                        <a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -306,5 +419,21 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="assets/js/wow.min.js"></script>
 <!-- Custom js -->
 <script src="assets/js/main.js"></script>
+<script>
+    function getQueryVariable(variable)
+    {
+        var query = window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i=0;i<vars.length;i++) {
+            var pair = vars[i].split("=");
+            if(pair[0] == variable){return pair[1];}
+        }
+        return(false);
+    }
+
+    console.log(getQueryVariable("eventImageUrl"));
+
+    document.getElementById('imageEvent').src = getQueryVariable("eventImageUrl");
+</script>
 </body>
 </html>

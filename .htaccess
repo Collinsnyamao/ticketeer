@@ -1,1 +1,2 @@
 DirectoryIndex login.html
+AddType application/x-httpd-php5 .php

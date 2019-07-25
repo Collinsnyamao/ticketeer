@@ -9,6 +9,7 @@
   "author": "colorlib",
   "license": "ISC",
   "dependencies": {
+    "curl": "^0.1.4",
     "date-time-picker": "^0.5.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
