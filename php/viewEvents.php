@@ -3,7 +3,6 @@ $servername = "localhost";
 $username = "root3";
 $password = "123";
 $dbname = "evento";
-include_once('php/BitlyPHP/bitly.php');
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
