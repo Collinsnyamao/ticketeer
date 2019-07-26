@@ -19,10 +19,10 @@ $conn = mysqli_connect($host,$username,$password,$db);
 
 $sql = "select user_Full_Names from Users where user_uid = '$user_ID'";
 $result = mysqli_query($conn,$sql);
-$dat = 1;
+$dat = 'full name holder';
 if (mysqli_num_rows($result) > 0){
     while ($row = mysqli_fetch_assoc($result)){
-        $dat=$row['sum'];
+        $dat=$row['user_Full_Names'];
     }
 }
 echo json_encode($dat);
