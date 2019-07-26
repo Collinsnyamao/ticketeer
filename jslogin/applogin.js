@@ -7,6 +7,10 @@ function loginByFirebase(email,password){
         document.getElementById('alertlogin').innerHTML = 'Successful Login';
         document.getElementById('alertlogin').classList.add('alert-success');
 
+        setTimeout(function () {
+            window.location.href = 'events.php';
+        },4000);
+
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -40,4 +44,21 @@ $('#loginBtn').on('click',function () {
        }
    }
 
+});
+
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+
+        console.log(user);
+        // User is signed in.
+
+        document.getElementById('alertlogin').hidden = false;
+        document.getElementById('alertlogin').innerHTML = 'currently signed in as: ' + user.email;
+        document.getElementById('alertlogin').classList.add('alert-info');
+
+    } else {
+
+        console.log('not signed in');
+        // No user is signed in.
+    }
 });
