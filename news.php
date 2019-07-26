@@ -418,14 +418,17 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     console.log(getQueryVariable("eventImageUrl"));
 
     var realDate = getQueryVariable("eventDate").replace(/%20/g,' ');
+    var realDesc = getQueryVariable("eventDesc").replace(/%20/g,' ');
+    var realTime = getQueryVariable("eventTime").replace(/%20/g,' ');
+    var realTitle = getQueryVariable("ename").replace(/%20/g,' ');
 
 
     document.getElementById('imageEvent').src = getQueryVariable("eventImageUrl");
     document.getElementById('btnDate').innerHTML = realDate;
-    document.getElementById('timeTag').innerHTML = getQueryVariable("eventTime");
+    document.getElementById('timeTag').innerHTML = realTime;
     document.getElementById('priceTag').innerHTML = getQueryVariable("eventPrice");
-    document.getElementById('titleTag').innerHTML = getQueryVariable("ename");
-    document.getElementById('descTag').innerHTML = getQueryVariable("eventDesc");
+    document.getElementById('titleTag').innerHTML = realTitle;
+    document.getElementById('descTag').innerHTML = realDesc;
 </script>
 </body>
 </html>
