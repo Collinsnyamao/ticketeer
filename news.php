@@ -417,7 +417,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
     console.log(getQueryVariable("eventImageUrl"));
 
-    var realDate = getQueryVariable("eventDate").replace(/%/g,' ');
+    var realDate = getQueryVariable("eventDate").replace(/%20/g,' ');
 
 
     document.getElementById('imageEvent').src = getQueryVariable("eventImageUrl");
