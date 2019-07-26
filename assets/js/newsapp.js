@@ -21,6 +21,9 @@ firebase.auth().onAuthStateChanged(function(user) {
                 url: "php/mPesa/payMpesa2.php",
                 success: function (response) {
                     console.log('response3: '+ response);
+
+                    document.getElementById('mpesaProgress').hidden = false;
+                    document.getElementById('mpesaProgress').innerHTML = response.ResponseDescription;
                 }
             });
 
