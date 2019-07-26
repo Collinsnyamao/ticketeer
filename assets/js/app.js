@@ -14,15 +14,28 @@ function getShorter(userId, eventName, eventDate, eventTime, eventImageUrl,event
         {
             console.log(response.data.url);
 
+
             $.ajax({
                 type: "post",
                 method: "POST",
-                data: {uid:userId,eventName:eventName,eventDescription:eventDescription,eventImageUrl:response.data.url,eventDate:eventDate,eventPrice:eventPrice,eventTime:eventTime},
-                url: "php/addEvent.php",
-                success: function (response) {
-                    console.log('response3: '+ response);
+                data: {uid:userId},
+                url: "php/checkUser.php",
+                success: function (response2) {
+                    console.log('User response: '+ response2);
+
+                    $.ajax({
+                        type: "post",
+                        method: "POST",
+                        data: {uid:response2,eventName:eventName,eventDescription:eventDescription,eventImageUrl:response.data.url,eventDate:eventDate,eventPrice:eventPrice,eventTime:eventTime},
+                        url: "php/addEvent.php",
+                        success: function (response) {
+                            console.log('response3: '+ response);
+                        }
+                    });
+
                 }
             });
+
 
 
         }
