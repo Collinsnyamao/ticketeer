@@ -6,6 +6,15 @@ function createNewUser(email,password,userFullName, userBirthday, userGender){
         console.table(success.user.uid);
 
         writeUserData(uid2,userFullName,userBirthday,userGender,email);
+        document.getElementById('regAlert').hidden = false;
+        document.getElementById('regAlert').innerHTML = 'Successful signup';
+        document.getElementById('regAlert').classList.add('alert-success');
+
+        setTimeout(function () {
+            window.location.href = 'events.php';
+        },2000);
+
+
 
     }).catch(function(error) {
         // Handle Errors here.
