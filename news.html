@@ -47,7 +47,7 @@
                     <a class="nav-link " href="events.php">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="contact.html">Contact</a>
+                    <button class="btn btn-primary" id="buyBtn">Contact</button>
                 </li>
                 <li class="search_btn">
                     <a  href="#">
@@ -403,6 +403,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="assets/js/wow.min.js"></script>
 <!-- Custom js -->
 <script src="assets/js/main.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.2/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAynvkUC2H3xOiPFjDIXuf4u0o6CWEbtDQ",
+        authDomain: "evento-1ec0f.firebaseapp.com",
+        databaseURL: "https://evento-1ec0f.firebaseio.com",
+        projectId: "evento-1ec0f",
+        storageBucket: "evento-1ec0f.appspot.com",
+        messagingSenderId: "262564078355",
+        appId: "1:262564078355:web:02e945955a4ffced"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+</script>
 <script>
     function getQueryVariable(variable)
     {
@@ -429,6 +451,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     document.getElementById('priceTag').innerHTML = getQueryVariable("eventPrice");
     document.getElementById('titleTag').innerHTML = realTitle;
     document.getElementById('descTag').innerHTML = realDesc;
+
+
+
+    var user = firebase.auth().currentUser;
+
+    if (user) {
+        // User is signed in.
+        console.log(user);
+    } else {
+        // No user is signed in.
+        console.log('user not signed in');
+    }
 </script>
 </body>
 </html>

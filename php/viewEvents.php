@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {
                 </div>
             </div>
             <div class='row' style='margin-top: 25px;'>
-                <a href='news.php?ename=".$row['eventName']."&eventDate=".$row['eventDate']."&eventTime=".$row['eventTime']."&eventPrice=".$row['eventPrice']."&".$row['eventName']."&eventDesc=".$row['eventDescription']."&eventImageUrl=".$row['eventImageUrl']."&eventUID=".$row['eventUid']."' class='btn btn-primary btn-rounded'>Buy Tickets</a>
+                <a href='news.html?ename=".$row['eventName']."&eventDate=".$row['eventDate']."&eventTime=".$row['eventTime']."&eventPrice=".$row['eventPrice']."&".$row['eventName']."&eventDesc=".$row['eventDescription']."&eventImageUrl=".$row['eventImageUrl']."&eventUID=".$row['eventUid']."' class='btn btn-primary btn-rounded'>Buy Tickets</a>
             </div>
         </div>";
     }
