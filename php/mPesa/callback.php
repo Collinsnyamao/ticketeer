@@ -59,7 +59,7 @@ if ($conn->connect_error){
 //Process Callback after transaction
 $dataPOST = trim(file_get_contents('php://input'));
 //Parse the xml data
-$xml = simplexml_load_string($checkoutResponse);
+$xml = simplexml_load_string($dataPOST);
 $ns = $xml->getNamespaces(true);
 $soap = $xml->children($ns['SOAP-ENV']);
 $sbody = $soap->Body;

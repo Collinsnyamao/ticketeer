@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/admin/php/eventCount.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/admin/php/usersCount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/php/eventsSummary.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/php/eventsSummary.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/mPesa/callback.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/mPesa/callback.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/mPesa/payMpesa2.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/mPesa/payMpesa2.php" afterDir="false" />
-    </list>
+    <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,20 +32,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/php/mPesa/payMpesa2.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="52" column="76" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
+              <caret line="52" column="64" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="64" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/mPesa/callback.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="68" column="9" selection-start-line="68" selection-end-line="68" selection-end-column="9" />
+            <state relative-caret-position="1470">
+              <caret line="98" column="259" selection-start-line="98" selection-start-column="259" selection-end-line="98" selection-end-column="259" />
             </state>
           </provider>
         </entry>
@@ -235,7 +227,7 @@
       <workItem from="1563817688109" duration="12838000" />
       <workItem from="1563918399562" duration="8514000" />
       <workItem from="1564057363916" duration="8705000" />
-      <workItem from="1564138101213" duration="21864000" />
+      <workItem from="1564138101213" duration="22360000" />
     </task>
     <task id="LOCAL-00001" summary="mended ui">
       <created>1563487396454</created>
@@ -269,13 +261,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64605000" />
+    <option name="totallyTimeSpent" value="65101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26979" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26979" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -612,13 +604,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/mPesa/payMpesa2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="52" column="76" selection-start-line="52" selection-start-column="76" selection-end-line="52" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/addUsers.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -631,8 +616,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/php/mPesa/callback.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="68" column="9" selection-start-line="68" selection-end-line="68" selection-end-column="9" />
+        <state relative-caret-position="1470">
+          <caret line="98" column="259" selection-start-line="98" selection-start-column="259" selection-end-line="98" selection-end-column="259" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/mPesa/payMpesa2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="52" column="64" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="64" />
         </state>
       </provider>
     </entry>
