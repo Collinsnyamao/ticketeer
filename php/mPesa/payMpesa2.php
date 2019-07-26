@@ -35,6 +35,7 @@ $passkey = "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919";
 $short_code = "174379";
 $amount = $_POST['totalAmount'];
 $phone = $_POST['phoneNumber'];
+$reference = $_POST['eventName'];
 $app_consumer_key = 'umej4q7yZW5uRy8apJAntTrZKlcbGraA ';
 $app_consumer_secret = 'LYpZgGVv4ePwSzOs';
 $password = base64_encode($short_code . $passkey . $timestamp);
@@ -50,7 +51,7 @@ $curl_post_data = array(
     "PartyB" => $short_code,
     "PhoneNumber" => $phone,
     "CallBackURL" => "http://159.89.135.168/projects/ISproject/web/admin/php/mPesa/callback.php",
-    "AccountReference" => "Order 43",
+    "AccountReference" => $reference,
     "TransactionDesc" => "Paybill Online"
 );
 

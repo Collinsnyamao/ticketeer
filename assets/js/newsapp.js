@@ -17,7 +17,7 @@ firebase.auth().onAuthStateChanged(function(user) {
             $.ajax({
                 type: "post",
                 method: "POST",
-                data: {phoneNumber:payPhone,totalAmount:totalAmount},
+                data: {phoneNumber:payPhone,totalAmount:totalAmount,eventName:realTitle},
                 url: "php/mPesa/payMpesa2.php",
                 success: function (response) {
                     console.log('response3: '+ response);
