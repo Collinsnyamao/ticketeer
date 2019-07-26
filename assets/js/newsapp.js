@@ -22,13 +22,10 @@ firebase.auth().onAuthStateChanged(function(user) {
                 success: function (response) {
                     console.log('response3: '+ response);
 
-
-                    var obj = JSON.stringify(response["CustomerMessage"]);
                     var obj2 = JSON.stringify(response);
-                    console.log('final : '+ response["CustomerMessage"]);
-                    console.log('final2 : '+ obj);
-                    console.log('final3 : '+ obj2.CustomerMessage);
-                    console.log('final4 : '+ obj.CustomerMessage);
+
+                    console.log(typeof response);
+                    console.log(typeof obj2);
 
                     /*var obj = JSON.parse(response);*/
 
