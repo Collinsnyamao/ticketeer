@@ -2,10 +2,10 @@ var database = firebase.database();
 const ref = firebase.storage().ref('EventImages');
 
 
-function getShorter(url)
+function getShorter(userId, eventName, eventDate, eventTime, eventImageUrl,eventPrice, eventDescription)
 {
     var accessToken = '611ae5072f8e46904913c81f8c75a8dee1db3ae9';
-    var url = 'https://api-ssl.bitly.com/v3/shorten?access_token=' + accessToken + '&longUrl=' + encodeURIComponent(url);
+    var url = 'https://api-ssl.bitly.com/v3/shorten?access_token=' + accessToken + '&longUrl=' + encodeURIComponent(eventImageUrl);
 
     $.getJSON(
         url,
@@ -13,6 +13,18 @@ function getShorter(url)
         function(response)
         {
             console.log(response.data.url);
+
+            $.ajax({
+                type: "post",
+                method: "POST",
+                data: {uid:userId,eventName:eventName,eventDescription:eventDescription,eventImageUrl:response.data.url,eventDate:eventDate,eventPrice:eventPrice,eventTime:eventTime},
+                url: "php/addEvent.php",
+                success: function (response) {
+                    console.log('response3: '+ response);
+                }
+            });
+
+
         }
     );
 }
@@ -30,9 +42,9 @@ function writeUserData(userId, eventName, eventDate, eventTime, eventImageUrl,ev
         eventDescription: eventDescription
     }).then(function () {
 
-        var shorterUrl = getShorter(eventImageUrl);
+        getShorter(userId,eventName,eventDate,eventTime,eventImageUrl,eventPrice,eventDescription);
 
-        $.ajax({
+        /*$.ajax({
             type: "post",
             method: "POST",
             data: {uid:userId,eventName:eventName,eventDescription:eventDescription,eventImageUrl:shorterUrl,eventDate:eventDate,eventPrice:eventPrice,eventTime:eventTime},
@@ -40,7 +52,7 @@ function writeUserData(userId, eventName, eventDate, eventTime, eventImageUrl,ev
             success: function (response) {
                 console.log('response3: '+ response);
             }
-        });
+        });*/
 
     });
 }
