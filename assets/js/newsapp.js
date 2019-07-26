@@ -28,8 +28,8 @@ firebase.auth().onAuthStateChanged(function(user) {
 
                     /*var obj = JSON.parse(response);*/
 
-                    document.getElementById('mpesaProgress').hidden = false;
-                    document.getElementById('mpesaProgress').innerHTML = response["CustomerMessage"];
+                    /*document.getElementById('mpesaProgress').hidden = false;
+                    document.getElementById('mpesaProgress').innerHTML = response["CustomerMessage"];*/
                 }
             });
 
