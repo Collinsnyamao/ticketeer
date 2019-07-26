@@ -21,11 +21,12 @@ firebase.auth().onAuthStateChanged(function(user) {
                 url: "php/mPesa/payMpesa2.php",
                 success: function (response) {
                     console.log('response3: '+ response);
+                    console.log('final : '+ ["CustomerMessage"]);
 
                     /*var obj = JSON.parse(response);*/
 
                     document.getElementById('mpesaProgress').hidden = false;
-                    document.getElementById('mpesaProgress').innerHTML = response[0];
+                    document.getElementById('mpesaProgress').innerHTML = response["CustomerMessage"];
                 }
             });
 
