@@ -21,7 +21,13 @@ firebase.auth().onAuthStateChanged(function(user) {
                 url: "php/mPesa/payMpesa2.php",
                 success: function (response) {
                     console.log('response3: '+ response);
-                    console.log('final : '+ ["CustomerMessage"]);
+
+
+                    var obj = JSON.stringify(response["CustomerMessage"]);
+                    var obj2 = JSON.stringify(response);
+                    console.log('final : '+ response["CustomerMessage"]);
+                    console.log('final2 : '+ obj);
+                    console.log('final3 : '+ obj2.CustomerMessage);
 
                     /*var obj = JSON.parse(response);*/
 
