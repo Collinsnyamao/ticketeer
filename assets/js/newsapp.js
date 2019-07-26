@@ -22,8 +22,10 @@ firebase.auth().onAuthStateChanged(function(user) {
                 success: function (response) {
                     console.log('response3: '+ response);
 
+                    var obj = JSON.parse(response);
+
                     document.getElementById('mpesaProgress').hidden = false;
-                    document.getElementById('mpesaProgress').innerHTML = response.ResponseDescription;
+                    document.getElementById('mpesaProgress').innerHTML = obj.ResponseDescription;
                 }
             });
 
