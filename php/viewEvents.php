@@ -24,13 +24,13 @@ if ($result->num_rows > 0) {
                 <div class='event_title'>
                     ".$row['eventName']."
                 </div>
-                <div class='speakers'>
-                    <strong>Speakers</strong>
-                    <span>Maria Smith,  Gabriel Hernandez,  Michael Williams</span>
-                </div>
                 <div class='event_date'>
                     ".$row['eventDate']." - ".$row['eventTime']."
                 </div>
+                <div class='speakers'>
+                    <strong> KES ".$row['eventPrice']."</strong>
+                </div>
+                
             </div>
             <div class='event_word'>
                 <div class='row justify-content-center'>

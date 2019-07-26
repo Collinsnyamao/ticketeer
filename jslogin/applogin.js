@@ -9,7 +9,7 @@ function loginByFirebase(email,password){
 
         setTimeout(function () {
             window.location.href = 'events.php';
-        },4000);
+        },3000);
 
     }).catch(function(error) {
         // Handle Errors here.
@@ -52,9 +52,9 @@ firebase.auth().onAuthStateChanged(function(user) {
         console.log(user);
         // User is signed in.
 
-        document.getElementById('alertlogin').hidden = false;
+        /*document.getElementById('alertlogin').hidden = false;
         document.getElementById('alertlogin').innerHTML = 'currently signed in as: ' + user.email;
-        document.getElementById('alertlogin').classList.add('alert-info');
+        document.getElementById('alertlogin').classList.add('alert-info');*/
 
     } else {
 
