@@ -83,10 +83,10 @@ if($s_status=="Success"){
     echo "this is ssid $s_msisdn";
 
 
-    $host = '159.89.135.168';
-    $db = 'schoolprojectDB';
-    $username = 'collinsnyamao';
-    $password = 'Sonofseed5';
+    $servername = "localhost";
+    $username = "root3";
+    $password = "123";
+    $dbname = "evento";
 
 
     $conn = mysqli_connect($host,$username,$password,$db);
@@ -96,7 +96,7 @@ if($s_status=="Success"){
     }else{
         echo 'success';
 
-        $sql = "insert into result (res1) values ('$m_msisdn');";
+        $sql = "INSERT INTO Transactions(s_msisdn,s_date,s_transaction_id,s_status,s_return_code,s_description,s_merchant_transaction_id) VALUES ('$s_msisdn','$s_date','$s_transactionid','$s_status','$s_returncode','$s_description','$s_merchant_transaction_id');";
 
         if ($conn->query($sql) === TRUE) {
             echo "New record created successfully";

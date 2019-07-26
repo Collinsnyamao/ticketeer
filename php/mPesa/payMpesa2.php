@@ -50,7 +50,7 @@ $curl_post_data = array(
     "PartyA" => $phone,
     "PartyB" => $short_code,
     "PhoneNumber" => $phone,
-    "CallBackURL" => "http://159.89.135.168/projects/ISproject/web/admin/php/mPesa/callback.php",
+    "CallBackURL" => "http://165.22.215.186/ticketeer/php/mPesa/callback.php",
     "AccountReference" => $reference,
     "TransactionDesc" => "Paybill Online"
 );

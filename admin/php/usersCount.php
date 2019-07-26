@@ -11,21 +11,14 @@ if ($conn->connect_error) {
 }
 
 
-$sql = "select * from Events;";
+$sql = "select count(*) as tr from users;";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
 
-        echo "<tr>
-                      <td><img src='".$row['eventImageUrl']."' style='height: 45px; width: 45px;'></td>
-                      <td>".$row['eventUid']."</td>
-                      <td>".$row['eventName']."</td>
-                      <td>".$row['eventDate']."</td>
-                      <td>".$row['eventPrice']."</td>
-                      <td>".$row['eventTime']."</td>
-                    </tr>";
+        echo $row['tr'];
     }
 } else {
     echo "0 results";
