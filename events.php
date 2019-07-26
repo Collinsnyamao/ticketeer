@@ -70,6 +70,9 @@
                 <li class="nav-item">
                     <a class="nav-link " href="contact.html">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="usertag"></a>
+                </li>
                 <li class="search_btn">
                     <a  href="#">
                         <i class="ion-ios-search"></i>
@@ -282,5 +285,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 <script src="assets/js/wow.min.js"></script>
 <!-- Custom js -->
 <script src="assets/js/main.js"></script>
+<script src="assets/js/events.js"></script>
 </body>
 </html>

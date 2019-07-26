@@ -44,19 +44,10 @@
         <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
             <ul class=" nav navbar-nav menu">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
+                    <a class="nav-link " href="events.php">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Speakers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#">Contact</a>
+                    <a class="nav-link " href="contact.html">Contact</a>
                 </li>
                 <li class="search_btn">
                     <a  href="#">
@@ -103,17 +94,16 @@
                 <div class="blog_card">
                     <img src="assets/img/blog/blog1.png" id="imageEvent" alt="blog News ">
                     <div class="blog_box_data">
-                        <span class="blog_date">
-                            Dec 08, 2017
+                        <span class="blog_date" id="btnDate">
                         </span>
                         <div class="blog_meta">
-                            <span><a href="#">By Lore Papp</a></span>  | <span><a href="#">  in Business   </a></span>|  <span><a href="#">3 Comments</a></span>
+                            <span><a id="timeTag"></a></span>  |    <span><a id="priceTag"></a></span>
                         </div>
-                        <h5>
-                            Why you should invest your money into a good business
+                        <h5 id="titleTag">
+
                         </h5>
-                        <p class="blog_word">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus massa nec gravida tempus. Integer iaculis in lacus a sollicitudin. Ut hendrerit hendrerit nisl a accumsan. Pellentesque convallis consectetur tortor id placerat. Curabitur a pulvinar nunc. Maecenas laoreet finibus lectus, at volutpat ligula euismod.
+                        <p class="blog_word" id="descTag">
+
                         </p>
                         <a href="#" class="readmore_btn">Read More</a>
                     </div>
@@ -379,20 +369,14 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
             <div class="col-12 col-md-6 ">
                 <ul class="footer_menu">
+                    <!--<li>
+                        <a href="l">Home</a>
+                    </li>-->
                     <li>
-                        <a href="#">Home</a>
+                        <a href="events.php">Events</a>
                     </li>
                     <li>
-                        <a href="#">Speakers</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -434,6 +418,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     console.log(getQueryVariable("eventImageUrl"));
 
     document.getElementById('imageEvent').src = getQueryVariable("eventImageUrl");
+    document.getElementById('btnDate').innerHTML = getQueryVariable("eventDate");
+    document.getElementById('timeTag').innerHTML = getQueryVariable("eventTime");
+    document.getElementById('priceTag').innerHTML = getQueryVariable("eventPrice");
+    document.getElementById('titleTag').innerHTML = getQueryVariable("ename");
+    document.getElementById('descTag').innerHTML = getQueryVariable("eventDesc");
 </script>
 </body>
 </html>
