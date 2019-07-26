@@ -344,18 +344,16 @@
                 <div class="card-body">
                   <table class="table table-hover">
                     <thead class="text-warning">
-                    <th>Event image</th>
-                    <th>Name</th>
-                    <th>Salary</th>
-                    <th>Country</th>
+
+                    <th> - </th>
+                    <th>Event Owner Uid</th>
+                    <th>Event Name</th>
+                    <th>Event Date</th>
+                    <th>Event Price</th>
+                    <th>Event Time</th>
                     </thead>
                     <tbody>
-                    <tr>
-                      <td><img src="assets/img/mask.png"></td>
-                      <td>Dakota Rice</td>
-                      <td>$36,738</td>
-                      <td>Niger</td>
-                    </tr>
+                    <?php require 'php/eventsSummary.php';?>
                     </tbody>
                   </table>
                 </div>
