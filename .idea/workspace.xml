@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="" />
+    <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="419" column="61" selection-start-line="419" selection-start-column="61" selection-end-line="419" selection-end-column="61" />
+            <state relative-caret-position="293">
+              <caret line="429" column="61" selection-start-line="429" selection-start-column="61" selection-end-line="429" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -196,7 +198,7 @@
       <workItem from="1563817688109" duration="12838000" />
       <workItem from="1563918399562" duration="8514000" />
       <workItem from="1564057363916" duration="8705000" />
-      <workItem from="1564138101213" duration="6676000" />
+      <workItem from="1564138101213" duration="7237000" />
     </task>
     <task id="LOCAL-00001" summary="mended ui">
       <created>1563487396454</created>
@@ -230,7 +232,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49417000" />
+    <option name="totallyTimeSpent" value="49978000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -517,8 +519,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="419" column="61" selection-start-line="419" selection-start-column="61" selection-end-line="419" selection-end-column="61" />
+        <state relative-caret-position="293">
+          <caret line="429" column="61" selection-start-line="429" selection-start-column="61" selection-end-line="429" selection-end-column="61" />
         </state>
       </provider>
     </entry>
