@@ -19,11 +19,11 @@ $conn = mysqli_connect($host,$username,$password,$db);
 
 $sql = "select user_Full_Names from Users where user_uid = '$user_ID'";
 $result = mysqli_query($conn,$sql);
-$dat = 'full name holder';
 if (mysqli_num_rows($result) > 0){
     while ($row = mysqli_fetch_assoc($result)){
         $dat=$row['user_Full_Names'];
+        echo json_encode($dat);
     }
 }
-echo json_encode($dat);
+
 ?>
