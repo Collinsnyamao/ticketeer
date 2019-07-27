@@ -28,7 +28,7 @@ $password = "123";
 $dbname = "evento";
 
 
-$conn = mysqli_connect($host,$username,$password,$db);
+$conn = mysqli_connect($host,$username,$password,$dbname);
 
 if ($conn->connect_error){
     echo 'failed';
