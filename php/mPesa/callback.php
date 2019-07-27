@@ -35,7 +35,7 @@ if ($conn->connect_error){
 }else{
     echo 'success';
 
-    $sql = "INSERT INTO Transactions(s_msisdn,s_date,s_transaction_id,s_status,s_return_code,s_description,s_merchant_transaction_id) VALUES ('$MSISDN','$transAmount','$lastName','$firstName','$middleName','$businessShortCode','$transactionType');";
+    $sql = "insert into Transactions(transactionMpesaID, transactionTime, transactionAmount, businessShortCode, billRefNumber, invoiceNumber, orgAccountBalance, thirdPartyTransID, MSISDN, firstName, middleName, lastName,transactionType) VALUES ('$transID','$transTime','$transAmount','$businessShortCode','$billRefNumber','$billRefNumber','$orgAccountBalance','$thirdPartyTransID','$MSISDN','$firstName','$middleName','$lastName','$transactionType')";
 
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
