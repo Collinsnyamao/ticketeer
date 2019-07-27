@@ -1,5 +1,5 @@
 <?php
-/*
+
 
 
 $dataPOST = trim(file_get_contents('php://input'));
@@ -51,12 +51,12 @@ if ($conn->connect_error){
 
 
 }
-*/?>
+?>
 
 
 
 <?php
-//Process Callback after transaction
+/*//Process Callback after transaction
 $dataPOST = trim(file_get_contents('php://input'));
 //Parse the xml data
 $xml = simplexml_load_string($dataPOST);
@@ -115,4 +115,4 @@ if($s_status=="Success"){
 }else{
     //Perform X operation
 }
-?>
+*/?>
