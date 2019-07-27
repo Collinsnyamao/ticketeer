@@ -1,62 +1,5 @@
 <?php
-
-
-
-$dataPOST = trim(file_get_contents('php://input'));
-
-// print_r($dataPOST);
-
-
-
-$myfile = fopen("testfile.txt", "w");
-fwrite($myfile, $dataPOST);
-fclose($myfile);
-
-
-// $xml = simplexml_load_string($dataPOST);
-// if ($xml === false) {
-//     echo "Failed loading XML: ";
-//     foreach(libxml_get_errors() as $error) {
-//         echo "<br>", $error->message;
-//     }
-// } else {
-//     print_r($xml);
-// }
-
-
-
-$host = '159.89.135.168';
-$db = 'schoolprojectDB';
-$username = 'collinsnyamao';
-$password = 'Sonofseed5';
-
-
-$conn = mysqli_connect($host,$username,$password,$db);
-
-if ($conn->connect_error){
-    echo 'failed';
-}else{
-    echo 'success';
-
-    $sql = "insert into result (res1) values ('$dataPOST');";
-
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-
-    $conn->close();
-
-
-
-}
-?>
-
-
-
-<?php
-/*//Process Callback after transaction
+//Process Callback after transaction
 $dataPOST = trim(file_get_contents('php://input'));
 //Parse the xml data
 $xml = simplexml_load_string($dataPOST);
@@ -115,4 +58,4 @@ if($s_status=="Success"){
 }else{
     //Perform X operation
 }
-*/?>
+?>
