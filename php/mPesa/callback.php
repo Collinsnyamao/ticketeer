@@ -45,13 +45,10 @@ if ($conn->connect_error){
 }else{
     echo 'success';
 
-    $bal = (string)$balance;
-    $amnt = (string)$amount;
-
     $sql = "insert into Transactions(transactionMpesaID, transaction_resultCode, transaction_resultDesc,
                          transaction_merchantRequestID, transaction_checkoutRequestID, transaction_amount,
                          transaction_Balance, transactionDate, transaction_phoneNumber)
-                          VALUES ('$mpesaReceiptNumber','$resultCode','$resultDesc','$merchantRequestID','$checkoutRequestID','$amnt','$bal','$transactionDate','$phoneNumber');";
+                          VALUES ('$mpesaReceiptNumber','$resultCode','$resultDesc','$merchantRequestID','$checkoutRequestID','$amount','$b2CUtilityAccountAvailableFunds','$transactionDate','$phoneNumber');";
 
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
