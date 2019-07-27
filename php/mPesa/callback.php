@@ -10,10 +10,12 @@ $amount=$callbackData->stkCallback->Body->CallbackMetadata->Item[0]->Value;
 $mpesaReceiptNumber=$callbackData->Body->stkCallback->CallbackMetadata->Item[1]->Value;
 $balance=$callbackData->stkCallback->Body->CallbackMetadata->Item[2]->Value;
 $b2CUtilityAccountAvailableFunds=$callbackData->Body->stkCallback->CallbackMetadata->Item[3]->Value;
-$transactionDate=$callbackData->Body->stkCallback->CallbackMetadata->Item[4]->Value;
+$transactionDate=$callbackData->Body->stkCallback->CallbackMetadata->Item[3]->Value;
 $phoneNumber=$callbackData->Body->stkCallback->CallbackMetadata->Item[5]->Value;
 //Save the returned data into the database or use it to finish certain operation.
-
+$myfile = fopen("testfile.txt", "w");
+fwrite($myfile, $callbackJSONData);
+fclose($myfile);
 $result=[
     "resultDesc"=>$resultDesc,
     "resultCode"=>$resultCode,
