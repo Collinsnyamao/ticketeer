@@ -13,9 +13,9 @@ $b2CUtilityAccountAvailableFunds=$callbackData->Body->stkCallback->CallbackMetad
 $transactionDate=$callbackData->Body->stkCallback->CallbackMetadata->Item[3]->Value;
 $phoneNumber=$callbackData->Body->stkCallback->CallbackMetadata->Item[4]->Value;
 //Save the returned data into the database or use it to finish certain operation.
-$myfile = fopen("testfile.txt", "w");
+/*$myfile = fopen("testfile.txt", "w");
 fwrite($myfile, $callbackJSONData);
-fclose($myfile);
+fclose($myfile);*/
 $result=[
     "resultDesc"=>$resultDesc,
     "resultCode"=>$resultCode,
