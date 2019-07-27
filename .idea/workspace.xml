@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/mPesa/callback.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/mPesa/callback.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,7 +157,7 @@
       <workItem from="1564057363916" duration="8705000" />
       <workItem from="1564138101213" duration="22800000" />
       <workItem from="1564239749051" duration="2271000" />
-      <workItem from="1564243864984" duration="6243000" />
+      <workItem from="1564243864984" duration="7145000" />
     </task>
     <task id="LOCAL-00001" summary="mended ui">
       <created>1563487396454</created>
