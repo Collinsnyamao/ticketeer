@@ -1,7 +1,7 @@
 <?php
 $callbackJSONData=file_get_contents('php://input');
 $callbackData=json_decode($callbackJSONData);
-$transactionType=$callbackData->TransactionType;
+/*$transactionType=$callbackData->TransactionType;
 $transID=$callbackData->TransID;
 $transTime=$callbackData->TransTime;
 $transAmount=$callbackData->TransAmount;
@@ -13,13 +13,16 @@ $thirdPartyTransID=$callbackData->ThirdPartyTransID;
 $MSISDN=$callbackData->MSISDN;
 $firstName=$callbackData->FirstName;
 $middleName=$callbackData->MiddleName;
-$lastName=$callbackData->LastName;
+$lastName=$callbackData->LastName;*/
 //Save the returned data into the database or use it to finish certain operation.
 
+$myfile = fopen("testfile.txt", "w");
+fwrite($myfile, $callbackJSONData);
+fclose($myfile);
 
 //Perfomr X operation
-
-echo "this is ssid ".$lastName;
+/*
+echo "status: ".$lastName;
 
 
 $servername = "localhost";
@@ -47,4 +50,4 @@ if ($conn->connect_error){
 
 
 
-}
+}*/
