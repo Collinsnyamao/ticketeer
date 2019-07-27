@@ -1,28 +1,35 @@
 <?php
 $callbackJSONData=file_get_contents('php://input');
 $callbackData=json_decode($callbackJSONData);
-/*$transactionType=$callbackData->TransactionType;
-$transID=$callbackData->TransID;
-$transTime=$callbackData->TransTime;
-$transAmount=$callbackData->TransAmount;
-$businessShortCode=$callbackData->BusinessShortCode;
-$billRefNumber=$callbackData->BillRefNumber;
-$invoiceNumber=$callbackData->InvoiceNumber;
-$orgAccountBalance=$callbackData->OrgAccountBalance;
-$thirdPartyTransID=$callbackData->ThirdPartyTransID;
-$MSISDN=$callbackData->MSISDN;
-$firstName=$callbackData->FirstName;
-$middleName=$callbackData->MiddleName;
-$lastName=$callbackData->LastName;*/
+$resultCode=$callbackData->Body->stkCallback->ResultCode;
+$resultDesc=$callbackData->Body->stkCallback->ResultDesc;
+$merchantRequestID=$callbackData->Body->stkCallback->MerchantRequestID;
+$checkoutRequestID=$callbackData->Body->stkCallback->CheckoutRequestID;
+
+$amount=$callbackData->stkCallback->Body->CallbackMetadata->Item[0]->Value;
+$mpesaReceiptNumber=$callbackData->Body->stkCallback->CallbackMetadata->Item[1]->Value;
+$balance=$callbackData->stkCallback->Body->CallbackMetadata->Item[2]->Value;
+$b2CUtilityAccountAvailableFunds=$callbackData->Body->stkCallback->CallbackMetadata->Item[3]->Value;
+$transactionDate=$callbackData->Body->stkCallback->CallbackMetadata->Item[4]->Value;
+$phoneNumber=$callbackData->Body->stkCallback->CallbackMetadata->Item[5]->Value;
 //Save the returned data into the database or use it to finish certain operation.
 
-$myfile = fopen("testfile.txt", "w");
-fwrite($myfile, $callbackJSONData);
-fclose($myfile);
+$result=[
+    "resultDesc"=>$resultDesc,
+    "resultCode"=>$resultCode,
+    "merchantRequestID"=>$merchantRequestID,
+    "checkoutRequestID"=>$checkoutRequestID,
+    "amount"=>$amount,
+    "mpesaReceiptNumber"=>$mpesaReceiptNumber,
+    "balance"=>$balance,
+    "b2CUtilityAccountAvailableFunds"=>$b2CUtilityAccountAvailableFunds,
+    "transactionDate"=>$transactionDate,
+    "phoneNumber"=>$phoneNumber
+];
 
 //Perfomr X operation
-/*
-echo "status: ".$lastName;
+
+echo "status: ".$resultDesc;
 
 
 $servername = "localhost";
@@ -38,7 +45,10 @@ if ($conn->connect_error){
 }else{
     echo 'success';
 
-    $sql = "insert into Transactions(transactionMpesaID, transactionTime, transactionAmount, businessShortCode, billRefNumber, invoiceNumber, orgAccountBalance, thirdPartyTransID, MSISDN, firstName, middleName, lastName,transactionType) VALUES ('$transID','$transTime','$transAmount','$businessShortCode','$billRefNumber','$billRefNumber','$orgAccountBalance','$thirdPartyTransID','$MSISDN','$firstName','$middleName','$lastName','$transactionType')";
+    $sql = "insert into Transactions(transactionMpesaID, transaction_resultCode, transaction_resultDesc,
+                         transaction_merchantRequestID, transaction_checkoutRequestID, transaction_amount,
+                         transaction_Balance, transactionDate, transaction_phoneNumber)
+                          VALUES ('$mpesaReceiptNumber','$resultCode','$resultDesc','$merchantRequestID','$checkoutRequestID','$amount','$balance','$transactionDate','$phoneNumber');";
 
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
@@ -50,4 +60,4 @@ if ($conn->connect_error){
 
 
 
-}*/
+}

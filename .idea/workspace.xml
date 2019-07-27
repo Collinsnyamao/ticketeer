@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="" />
+    <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/mPesa/callback.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/mPesa/callback.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,21 +71,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>index</find>
-      <find>index3.html</find>
-      <find>index3</find>
-      <find>\</find>
-      <find>colorli</find>
-      <find>php</find>
-      <find>documentat</find>
-      <find>\&quot;</find>
-    </findStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -93,44 +81,6 @@
   <component name="ProjectId" id="1ObQXkz7ggqmZXeL6yoDG4ilp57" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ticketeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ticketeer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ticketeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ticketeer" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ticketeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ticketeer" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="mPesa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ticketeer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ticketeer" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="mPesa" type="462c0819:PsiDirectoryNode" />
-              <item name="2" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
@@ -208,7 +158,7 @@
       <workItem from="1564057363916" duration="8705000" />
       <workItem from="1564138101213" duration="22800000" />
       <workItem from="1564239749051" duration="2271000" />
-      <workItem from="1564243864984" duration="2258000" />
+      <workItem from="1564243864984" duration="3717000" />
     </task>
     <task id="LOCAL-00001" summary="mended ui">
       <created>1563487396454</created>
