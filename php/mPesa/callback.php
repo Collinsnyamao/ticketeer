@@ -6,7 +6,7 @@ $resultDesc=$callbackData->Body->stkCallback->ResultDesc;
 $merchantRequestID=$callbackData->Body->stkCallback->MerchantRequestID;
 $checkoutRequestID=$callbackData->Body->stkCallback->CheckoutRequestID;
 
-$amount=$callbackData->stkCallback->Body->CallbackMetadata->Item[0]->Value;
+$amount=$callbackData->Body->stkCallback->CallbackMetadata->Item[0]->Value;
 $mpesaReceiptNumber=$callbackData->Body->stkCallback->CallbackMetadata->Item[1]->Value;
 $balance=$callbackData->stkCallback->Body->CallbackMetadata->Item[2]->Value;
 $b2CUtilityAccountAvailableFunds=$callbackData->Body->stkCallback->CallbackMetadata->Item[3]->Value;
@@ -52,7 +52,7 @@ if ($conn->connect_error){
     $sql = "insert into Transactions(transactionMpesaID, transaction_resultCode, transaction_resultDesc,
                          transaction_merchantRequestID, transaction_checkoutRequestID, transaction_amount,
                          transaction_Balance, transactionDate, transaction_phoneNumber)
-                          VALUES ('$mpesaReceiptNumber','$resultCode','$resultDesc','$merchantRequestID','$checkoutRequestID','$amnt','$balance','$transactionDate','$phoneNumber');";
+                          VALUES ('$mpesaReceiptNumber','$resultCode','$resultDesc','$merchantRequestID','$checkoutRequestID','$amount','N/A','$transactionDate','$phoneNumber');";
 
     if ($conn->query($sql) === TRUE) {
         echo "New record created successfully";
