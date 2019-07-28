@@ -47,25 +47,45 @@ $('#submitbtn').on('click',function () {
 
         if (userFullNames == '') {
             console.log("name input empty");
-
+            document.getElementById('regAlert').hidden = false;
+            document.getElementById('regAlert').classList.remove('alert-success');
+            document.getElementById('regAlert').classList.add('alert-danger');
+            document.getElementById('regAlert').innerHTML = 'name input empty!';
         }else if (userFullNames != '') {
 
             if (userBirthday == '') {
                 console.log("Birthday input empty");
+                document.getElementById('regAlert').hidden = false;
+                document.getElementById('regAlert').classList.remove('alert-success');
+                document.getElementById('regAlert').classList.add('alert-danger');
+                document.getElementById('regAlert').innerHTML = 'Birthday input empty!';
 
             }else if (userBirthday != '') {
 
                 if (userGender == '') {
                     console.log("Gender input empty");
+                    document.getElementById('regAlert').hidden = false;
+                    document.getElementById('regAlert').classList.remove('alert-success');
+                    document.getElementById('regAlert').classList.add('alert-danger');
+                    document.getElementById('regAlert').innerHTML = 'Gender input empty!';
 
                 }else if (userGender != '') {
 
                     if (userEmail == '') {
                         console.log("email input empty");
+                        document.getElementById('regAlert').hidden = false;
+                        document.getElementById('regAlert').classList.remove('alert-success');
+                        document.getElementById('regAlert').classList.add('alert-danger');
+                        document.getElementById('regAlert').innerHTML = 'email input empty!';
 
                     }else if (userEmail != '') {
 
                         createNewUser(userEmail,passwordInput,userFullNames,userBirthday,userGender);
+                        document.getElementById('regAlert').hidden = false;
+                        document.getElementById('regAlert').classList.remove('alert-success');
+                        document.getElementById('regAlert').classList.add('alert-info');
+                        document.getElementById('regAlert').innerHTML = 'Loading ...';
+
                     }
                 }
             }
