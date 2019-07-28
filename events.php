@@ -85,7 +85,7 @@
 <!--header end here-->
 
 <!--page title section-->
-<section class="inner_cover parallax-window" data-parallax="scroll" data-image-src="assets/img/bg/bg-img.png">
+<section class="inner_cover parallax-window" data-parallax="scroll" data-image-src="images1/53794.jpg">
     <div class="overlay_dark"></div>
     <div class="container">
         <div class="row justify-content-center align-items-center">

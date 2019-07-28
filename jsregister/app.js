@@ -9,6 +9,8 @@ function createNewUser(email,password,userFullName, userBirthday, userGender){
         document.getElementById('regAlert').hidden = false;
         document.getElementById('regAlert').innerHTML = 'Successful signup';
         document.getElementById('regAlert').classList.add('alert-success');
+        document.getElementById('regAlert').classList.remove('alert-danger');
+        document.getElementById('regAlert').classList.remove('alert-info');
 
         setTimeout(function () {
             window.location.href = 'events.php';
@@ -21,6 +23,11 @@ function createNewUser(email,password,userFullName, userBirthday, userGender){
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
+
+        document.getElementById('regAlert').hidden = false;
+        document.getElementById('regAlert').classList.remove('alert-success');
+        document.getElementById('regAlert').classList.add('alert-danger');
+        document.getElementById('regAlert').innerHTML = errorMessage;
 
         console.log(errorMessage);
     });
@@ -42,14 +49,19 @@ $('#submitbtn').on('click',function () {
 
     if (passwordInput !== confirmpwd) {
         console.log("passwords do not match");
+        document.getElementById('regAlert').hidden = false;
+        document.getElementById('regAlert').classList.add('alert-danger');
+        document.getElementById('regAlert').classList.remove('alert-success');
+        document.getElementById('regAlert').classList.remove('alert-info');
+        document.getElementById('regAlert').innerHTML = 'Passwords do not match!';
     }else if (passwordInput === confirmpwd) {
         console.log("passwords match");
 
         if (userFullNames == '') {
             console.log("name input empty");
             document.getElementById('regAlert').hidden = false;
-            document.getElementById('regAlert').classList.remove('alert-success');
             document.getElementById('regAlert').classList.add('alert-danger');
+            document.getElementById('regAlert').classList.remove('alert-success');
             document.getElementById('regAlert').innerHTML = 'name input empty!';
         }else if (userFullNames != '') {
 
@@ -83,6 +95,7 @@ $('#submitbtn').on('click',function () {
                         createNewUser(userEmail,passwordInput,userFullNames,userBirthday,userGender);
                         document.getElementById('regAlert').hidden = false;
                         document.getElementById('regAlert').classList.remove('alert-success');
+                        document.getElementById('regAlert').classList.remove('alert-danger');
                         document.getElementById('regAlert').classList.add('alert-info');
                         document.getElementById('regAlert').innerHTML = 'Loading ...';
 
