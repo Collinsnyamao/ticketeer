@@ -47,19 +47,34 @@ if ($conn->connect_error){
 }else{
     echo 'success';
 
-    $amnt = (string) $amount;
 
-    $sql = "insert into Transactions(transactionMpesaID, transaction_resultCode, transaction_resultDesc,
+
+
+    $sql2 = "select user_Full_Names,user_Email from Users where user_phone = '$phoneNumber'";
+    $result2 = mysqli_query($conn,$sql2);
+    if (mysqli_num_rows($result2) > 0){
+        while ($row2 = mysqli_fetch_assoc($result2)){
+            echo $row2['user_Full_Names'];
+
+            $amnt = (string) $amount;
+            $userFullNames = $row2['user_Full_Names'];
+            $userEmail = $row2['user_Email'];
+
+            $sql = "insert into Transactions(transactionMpesaID, transaction_resultCode, transaction_resultDesc,
                          transaction_merchantRequestID, transaction_checkoutRequestID, transaction_amount,
-                         transaction_Balance, transactionDate, transaction_phoneNumber)
-                          VALUES ('$mpesaReceiptNumber','$resultCode','$resultDesc','$merchantRequestID','$checkoutRequestID','$amount','N/A','$transactionDate','$phoneNumber');";
+                         transaction_Balance, transactionDate, transaction_phoneNumber,userFullNames,userEmail)
+                          VALUES ('$mpesaReceiptNumber','$resultCode','$resultDesc','$merchantRequestID','$checkoutRequestID','$amount','N/A','$transactionDate','$phoneNumber','$userFullNames','$userEmail');";
 
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+            if ($conn->query($sql) === TRUE) {
+                echo "New record created successfully";
+            } else {
+                echo "Error: " . $sql . "<br>" . $conn->error;
+            }
+
+
+
+        }
     }
-
     $conn->close();
 
 
