@@ -1,37 +1,7 @@
 <?php
 $callbackJSONData=file_get_contents('php://input');
 $callbackData=json_decode($callbackJSONData);
-$resultCode=$callbackData->Body->stkCallback->ResultCode;
-$resultDesc=$callbackData->Body->stkCallback->ResultDesc;
-$merchantRequestID=$callbackData->Body->stkCallback->MerchantRequestID;
-$checkoutRequestID=$callbackData->Body->stkCallback->CheckoutRequestID;
 
-$amount=$callbackData->Body->stkCallback->CallbackMetadata->Item[0]->Value;
-$mpesaReceiptNumber=$callbackData->Body->stkCallback->CallbackMetadata->Item[1]->Value;
-$balance=$callbackData->stkCallback->Body->CallbackMetadata->Item[2]->Value;
-$b2CUtilityAccountAvailableFunds=$callbackData->Body->stkCallback->CallbackMetadata->Item[3]->Value;
-$transactionDate=$callbackData->Body->stkCallback->CallbackMetadata->Item[3]->Value;
-$phoneNumber=$callbackData->Body->stkCallback->CallbackMetadata->Item[4]->Value;
-//Save the returned data into the database or use it to finish certain operation.
-/*$myfile = fopen("testfile.txt", "w");
-fwrite($myfile, $callbackJSONData);
-fclose($myfile);*/
-$result=[
-    "resultDesc"=>$resultDesc,
-    "resultCode"=>$resultCode,
-    "merchantRequestID"=>$merchantRequestID,
-    "checkoutRequestID"=>$checkoutRequestID,
-    "amount"=>$amount,
-    "mpesaReceiptNumber"=>$mpesaReceiptNumber,
-    "balance"=>$balance,
-    "b2CUtilityAccountAvailableFunds"=>$b2CUtilityAccountAvailableFunds,
-    "transactionDate"=>$transactionDate,
-    "phoneNumber"=>$phoneNumber
-];
-
-//Perfomr X operation
-
-echo "status: ".$resultDesc;
 
 
 $servername = "localhost";
@@ -55,6 +25,40 @@ if ($conn->connect_error){
     if (mysqli_num_rows($result2) > 0){
         while ($row2 = mysqli_fetch_assoc($result2)){
             echo $row2['user_Full_Names'];
+
+
+            $resultCode=$callbackData->Body->stkCallback->ResultCode;
+            $resultDesc=$callbackData->Body->stkCallback->ResultDesc;
+            $merchantRequestID=$callbackData->Body->stkCallback->MerchantRequestID;
+            $checkoutRequestID=$callbackData->Body->stkCallback->CheckoutRequestID;
+
+            $amount=$callbackData->Body->stkCallback->CallbackMetadata->Item[0]->Value;
+            $mpesaReceiptNumber=$callbackData->Body->stkCallback->CallbackMetadata->Item[1]->Value;
+            $balance=$callbackData->stkCallback->Body->CallbackMetadata->Item[2]->Value;
+            $b2CUtilityAccountAvailableFunds=$callbackData->Body->stkCallback->CallbackMetadata->Item[3]->Value;
+            $transactionDate=$callbackData->Body->stkCallback->CallbackMetadata->Item[3]->Value;
+            $phoneNumber=$callbackData->Body->stkCallback->CallbackMetadata->Item[4]->Value;
+//Save the returned data into the database or use it to finish certain operation.
+            /*$myfile = fopen("testfile.txt", "w");
+            fwrite($myfile, $callbackJSONData);
+            fclose($myfile);*/
+            $result=[
+                "resultDesc"=>$resultDesc,
+                "resultCode"=>$resultCode,
+                "merchantRequestID"=>$merchantRequestID,
+                "checkoutRequestID"=>$checkoutRequestID,
+                "amount"=>$amount,
+                "mpesaReceiptNumber"=>$mpesaReceiptNumber,
+                "balance"=>$balance,
+                "b2CUtilityAccountAvailableFunds"=>$b2CUtilityAccountAvailableFunds,
+                "transactionDate"=>$transactionDate,
+                "phoneNumber"=>$phoneNumber
+            ];
+
+//Perfomr X operation
+
+            echo "status: ".$resultDesc;
+
 
             $amnt = (string) $amount;
             $userFullNames = $row2['user_Full_Names'];
