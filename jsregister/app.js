@@ -12,9 +12,9 @@ function createNewUser(email,password,userFullName, userBirthday, userGender,use
         document.getElementById('regAlert').classList.remove('alert-danger');
         document.getElementById('regAlert').classList.remove('alert-info');
 
-        setTimeout(function () {
+        /*setTimeout(function () {
             window.location.href = 'events.php';
-        },2000);
+        },2000);*/
 
 
 
