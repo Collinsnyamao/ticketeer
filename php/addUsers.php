@@ -9,6 +9,7 @@ $bday = $_POST['bday'];
 $uemail = $_POST['uemail'];
 $uFullNames = $_POST['userFullNames'];
 $userGender = $_POST['userGender'];
+$userPhone = $_POST['userPhone'];
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
@@ -17,7 +18,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO Users(user_uid,user_Birthday,user_Email,user_Full_Names,user_Gender) VALUES ('$uid', '$bday', '$uemail', '$uFullNames', '$userGender');";
+$sql = "INSERT INTO Users(user_uid,user_Birthday,user_Email,user_Full_Names,user_Gender,user_phone) VALUES ('$uid', '$bday', '$uemail', '$uFullNames', '$userGender','$userPhone');";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";

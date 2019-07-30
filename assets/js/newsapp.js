@@ -4,7 +4,6 @@ firebase.auth().onAuthStateChanged(function(user) {
         console.log(user);
 
 
-
         $('#sendAmount').on('click',function () {
            var payPhone = $('#phoneInput').val();
            var quantity = $('#quantityInput').val();
@@ -20,12 +19,12 @@ firebase.auth().onAuthStateChanged(function(user) {
                 data: {phoneNumber:payPhone,totalAmount:totalAmount,eventName:realTitle},
                 url: "php/mPesa/payMpesa2.php",
                 success: function (response) {
-                    console.log('response3: '+ response);
 
-                    console.log('after ');
 
-                    /*var obj = JSON.parse(response);*/
+                    console.log('after 1');
 
+                    var obj = JSON.parse(response);
+                    console.table(response[0].errorMessage);
                     /*document.getElementById('mpesaProgress').hidden = false;
                     document.getElementById('mpesaProgress').innerHTML = response["CustomerMessage"];*/
                 }
@@ -45,7 +44,10 @@ firebase.auth().onAuthStateChanged(function(user) {
 });
 
 
+/*
 var source = new EventSource("php/mPesa/callback.php");
 source.onmessage = function(event) {
     console.log(event.data);
-};
+};*/
+
+console.log('this page');
