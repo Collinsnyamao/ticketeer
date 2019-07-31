@@ -3,7 +3,7 @@ $servername = "127.0.0.1";
 $username = "root3";
 $password = "123";
 $dbname = "evento";
-$mpesaID = $_POST['mpesaCode'];
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
