@@ -84,7 +84,7 @@
             <ul>
                 <li><a href="#">Home</a>  |  </li>
                 <li><a href="#">About us</a> |  </li>
-                <li><span>Speakers</span></li>
+                <li><span>Event editor</span></li>
             </ul>
         </div>
     </div>
@@ -153,7 +153,7 @@
                 </div>
                 <div id="eventsdiv">
 
-                    <?php require 'php/viewEvents.php'; ?>
+                    <?php require 'php/checkEvents.php'; ?>
                     <!--<div>
                         <div class="row">
                             <div class="col-md-3">
@@ -607,19 +607,10 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             <div class="col-12 col-md-6 ">
                 <ul class="footer_menu">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="#">Speakers</a>
-                    </li>
-                    <li>
-                        <a href="#">Events</a>
-                    </li>
-                    <li>
-                        <a href="#">News</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
+                        <a href="events.php">Events</a>
                     </li>
                 </ul>
             </div>

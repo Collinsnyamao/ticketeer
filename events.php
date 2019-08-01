@@ -71,7 +71,7 @@
                     <a class="nav-link " href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="speakers.html"><i class="fa fa-plus"></i>&nbsp;Submit event</a>
+                    <a class="nav-link " href="speakers.php"><i class="fa fa-plus"></i>&nbsp;Submit event</a>
                 </li>
             </ul>
         </div>
