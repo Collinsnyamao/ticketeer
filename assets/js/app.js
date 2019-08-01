@@ -23,6 +23,7 @@ function getShorter(userId, eventName, eventDate, eventTime, eventImageUrl,event
                     console.log('response3: '+ response);
                     document.getElementById('eventAlert').hidden = false;
                     document.getElementById('eventAlert').classList.remove('alert-danger');
+                    document.getElementById('eventAlert').classList.remove('alert-info');
                     document.getElementById('eventAlert').classList.add('alert-success');
                     document.getElementById('eventAlert').innerHTML = 'data Added';
                 }
@@ -93,6 +94,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                     console.log("done with upload!");
                     document.getElementById('eventAlert').hidden = false;
                     document.getElementById('eventAlert').classList.remove('alert-danger');
+                    document.getElementById('eventAlert').classList.remove('alert-info');
                     document.getElementById('eventAlert').classList.add('alert-success');
                     document.getElementById('eventAlert').innerHTML = 'Event Added';
                     writeUserData(user.uid,eventName,eventDate,eventTime,url,eventprice,eventdesc);
