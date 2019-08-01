@@ -30,10 +30,53 @@ $('#mpesaCodeBtn').on('click',function () {
             $.ajax({
                 type: "post",
                 method: "POST",
-                data: {phoneNumber:payPhone,totalAmount:totalAmount,eventName:realTitle},
-                url: "php/mPesa/payMpesa2.php",
+                data: {mpesaID:code},
+                url: "php/confirmPayment.php",
                 success: function (response) {
+                    console.log(response);
+                    var values = response.split("%");
+                    console.log(values[0]);
+                    if (values[1] == 0) {
+                        console.log('Affirmative!');
+                        document.getElementById('confirmAlert').classList.add('alert-success');
+                        document.getElementById('confirmAlert').classList.remove('alert-danger');
+                        document.getElementById('confirmAlert').innerHTML = 'PAYMENT RECIEVED! hold on...';
 
+                        setTimeout(function () {
+                            document.getElementById('beforeC').hidden = true;
+                            document.getElementById('afterC').hidden = false;
+                        },1000);
+
+                        $('#mpesaCodeBtnC').on('click',function () {
+                            var ticketFname = $('#ticketFname').val();
+                            var ticketLname = $('#ticketLname').val();
+                            var ticketEmail = $('#ticketEmail').val();
+
+
+                            validate();
+
+                            if (validateEmail(ticketEmail)){
+                                console.log(ticketEmail,ticketFname,ticketLname);
+
+                                $.ajax({
+                                    type: "post",
+                                    method: "POST",
+                                    data: {ticketFname:ticketFname,ticketLname:ticketLname,ticketEmail:ticketEmail,ticketPurchaseCode:code},
+                                    url: "php/createTicket.php",
+                                    success: function (response3) {
+                                        console.log(response3);
+                                        document.getElementById('ticketAlert').innerHTML = "ticket sent! check your email within the next 5 minutes!";
+                                    }
+                                });
+                            } else {
+                            }
+                        });
+
+                    }else {
+                        console.log('Negative' + values[1]);
+                    }
+                    
+                    
                 }
             });
 
@@ -43,3 +86,23 @@ $('#mpesaCodeBtn').on('click',function () {
 
 
 });
+
+function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
+function validate() {
+    var $result = $("#ticketAlert");
+    var email = $("#ticketEmail").val();
+    $result.text("");
+
+    if (validateEmail(email)) {
+        $result.text(email + " is valid :) "+'sending tickets ...');
+        $result.css("color", "green");
+    } else {
+        $result.text(email + " is not valid :(");
+        $result.css("color", "red");
+    }
+    return false;
+}

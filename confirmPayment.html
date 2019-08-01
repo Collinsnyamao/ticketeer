@@ -199,7 +199,7 @@
                         <h4 class="widget-title">
                             Confirm Payment for:
                         </h4>
-                        <ul>
+                        <ul id="beforeC">
                             <li>
                                 <div class="widget_recent_posts">
                                     <div class="content align-content-center">
@@ -239,6 +239,60 @@
                                     </div>
                                     <div class="form-group">
                                         <button class="btn btn-primary" id="mpesaCodeBtn">Confirm</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+
+
+
+                        <ul id="afterC" hidden>
+                            <li>
+                                <div class="widget_recent_posts">
+                                    <div class="content align-content-center">
+                                        <div class="row">
+                                            <div class="alert" id="confirmAlertC"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Ticket Holder's Details</h4>
+                                <hr>
+
+                                    <div class="alert alert-success" id="ticketAlert"></div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="ticketFname">First Name</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="ticketLname">First Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="First Name" class="form-control" id="ticketFname">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <input type="text" placeholder="Last name"  class="form-control" id="ticketLname">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="ticketEmail"> Email Address to recieve Ticket</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <input type="text" placeholder="Email Address"  class="form-control" id="ticketEmail">
+                                    </div>
+                                </div>
+
+                                <hr>
+                                <div class="widget_recent_posts">
+                                    <div class="form-group">
+                                        <button class="btn btn-primary" id="mpesaCodeBtnC">Send Ticket(s)</button>
                                     </div>
                                 </div>
                             </li>
