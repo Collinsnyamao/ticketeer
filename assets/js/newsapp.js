@@ -21,7 +21,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                 success: function (response) {
 
 
-                    window.location.href = 'confirmPayment.html?ename='+realTitle+'&amount='+totalAmount+'&phone='+payPhone+'&imgUrl='+getQueryVariable("eventImageUrl");
+                    window.location.href = 'confirmPayment.html?ename='+realTitle+'&amount='+totalAmount+'&phone='+payPhone+'&imgUrl='+getQueryVariable("eventImageUrl")+'&quantity='+quantity;
                     console.log(response);
                     /*document.getElementById('mpesaProgress').hidden = false;
                     document.getElementById('mpesaProgress').innerHTML = response["CustomerMessage"];*/

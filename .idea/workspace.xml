@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="" />
+    <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confirmPayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/confirmPayment.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/confirmPayment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="40" column="49" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="49" />
+            <state relative-caret-position="106">
+              <caret line="485" column="82" lean-forward="true" selection-start-line="485" selection-start-column="82" selection-end-line="485" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -181,10 +184,10 @@
         <option value="$PROJECT_DIR$/php/mPesa/payMpesa2.php" />
         <option value="$PROJECT_DIR$/assets/js/newsapp.js" />
         <option value="$PROJECT_DIR$/php/confirmPayment.php" />
-        <option value="$PROJECT_DIR$/confirmPayment.html" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/89fc7889-13df-4689-9e84-9a0eab9782cb/console.sql" />
         <option value="$PROJECT_DIR$/php/createTicket.php" />
         <option value="$PROJECT_DIR$/assets/js/confirmapp.js" />
+        <option value="$PROJECT_DIR$/confirmPayment.html" />
       </list>
     </option>
   </component>
@@ -299,7 +302,7 @@
       <workItem from="1564325172945" duration="119000" />
       <workItem from="1564326229003" duration="1412000" />
       <workItem from="1564412560276" duration="15485000" />
-      <workItem from="1564617756477" duration="1877000" />
+      <workItem from="1564617756477" duration="2186000" />
     </task>
     <task id="LOCAL-00001" summary="mended ui">
       <created>1563487396454</created>
@@ -333,7 +336,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18774000" />
+    <option name="totallyTimeSpent" value="19083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -563,8 +566,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/confirmPayment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="40" column="49" selection-start-line="40" selection-start-column="45" selection-end-line="40" selection-end-column="49" />
+        <state relative-caret-position="106">
+          <caret line="485" column="82" lean-forward="true" selection-start-line="485" selection-start-column="82" selection-end-line="485" selection-end-column="82" />
         </state>
       </provider>
     </entry>

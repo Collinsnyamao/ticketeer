@@ -61,7 +61,7 @@ $('#mpesaCodeBtn').on('click',function () {
                                 $.ajax({
                                     type: "post",
                                     method: "POST",
-                                    data: {ticketFname:ticketFname,ticketLname:ticketLname,ticketEmail:ticketEmail,ticketPurchaseCode:code},
+                                    data: {ticketFname:ticketFname,ticketLname:ticketLname,ticketEmail:ticketEmail,ticketPurchaseCode:code,ticketEventName:eventName,ticketQuantity:quantity},
                                     url: "php/createTicket.php",
                                     success: function (response3) {
                                         console.log(response3);

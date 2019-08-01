@@ -9,6 +9,8 @@ $ticketFname = $_POST['ticketFname'];
 $ticketLname = $_POST['ticketLname'];
 $ticketEmail = $_POST['ticketEmail'];
 $ticketPurchaseCode = $_POST['ticketPurchaseCode'];
+$ticketQuantity = $_POST['ticketQuantity'];
+$ticketEventName = $_POST['ticketEventName'];
 
 date_default_timezone_set('Africa/Nairobi');
 $dateTime = date('m/d/Y h:i:s a', time());
@@ -21,7 +23,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT into tickets(ticketOwnerFname, ticketOwnerLname, ticketOwnerEmail, ticketSentDate, ticketPurchaseCode) VALUES ('$ticketFname','$ticketLname','$ticketEmail','$dateTime','$ticketPurchaseCode');";
+$sql = "INSERT into tickets(ticketOwnerFname, ticketOwnerLname, ticketOwnerEmail, ticketSentDate, ticketPurchaseCode,ticketQuantity,ticketEventName) VALUES ('$ticketFname','$ticketLname','$ticketEmail','$dateTime','$ticketPurchaseCode','$ticketQuantity','$ticketEventName');";
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
