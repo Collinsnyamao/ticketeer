@@ -51,6 +51,10 @@ $('#mpesaCodeBtn').on('click',function () {
                             var ticketFname = $('#ticketFname').val();
                             var ticketLname = $('#ticketLname').val();
                             var ticketEmail = $('#ticketEmail').val();
+                            var ticketParking = $('#parkingSelector').val();
+                            var ticketFood = $('#foodSelector').val();
+                            var ticketDrinks = $('#drinkSelector').val();
+                            var ticketPreference = $('#preferenceSelector').val();
 
 
                             validate();
@@ -61,7 +65,7 @@ $('#mpesaCodeBtn').on('click',function () {
                                 $.ajax({
                                     type: "post",
                                     method: "POST",
-                                    data: {ticketFname:ticketFname,ticketLname:ticketLname,ticketEmail:ticketEmail,ticketPurchaseCode:code,ticketEventName:eventName,ticketQuantity:quantity},
+                                    data: {ticketFname:ticketFname,ticketLname:ticketLname,ticketEmail:ticketEmail,ticketPurchaseCode:code,ticketEventName:eventName,ticketQuantity:quantity,ticketParking:ticketParking,ticketFood:ticketFood,ticketDrinks:ticketDrinks,ticketPreferences:ticketPreference},
                                     url: "php/createTicket.php",
                                     success: function (response3) {
                                         console.log(response3);

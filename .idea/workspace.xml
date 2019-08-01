@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/confirmapp.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/confirmapp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/confirmPayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/confirmPayment.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/createTicket.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/createTicket.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,20 +98,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/confirmPayment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="541" column="68" lean-forward="true" selection-start-line="541" selection-start-column="68" selection-end-line="541" selection-end-column="68" />
+            <state relative-caret-position="645">
+              <caret line="369" column="129" selection-start-line="369" selection-start-column="129" selection-end-line="369" selection-end-column="129" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/confirmapp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="63" column="154" selection-start-line="63" selection-start-column="154" selection-end-line="63" selection-end-column="154" />
+            <state relative-caret-position="362">
+              <caret line="67" column="227" selection-start-line="67" selection-start-column="227" selection-end-line="67" selection-end-column="227" />
             </state>
           </provider>
         </entry>
@@ -117,17 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/createTicket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/89fc7889-13df-4689-9e84-9a0eab9782cb/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="134" selection-end-column="134" />
+            <state relative-caret-position="184">
+              <caret line="14" column="32" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -184,9 +177,9 @@
         <option value="$PROJECT_DIR$/php/confirmPayment.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/89fc7889-13df-4689-9e84-9a0eab9782cb/console.sql" />
         <option value="$PROJECT_DIR$/assets/js/newsapp.js" />
+        <option value="$PROJECT_DIR$/php/createTicket.php" />
         <option value="$PROJECT_DIR$/confirmPayment.html" />
         <option value="$PROJECT_DIR$/assets/js/confirmapp.js" />
-        <option value="$PROJECT_DIR$/php/createTicket.php" />
       </list>
     </option>
   </component>
@@ -301,7 +294,7 @@
       <workItem from="1564325172945" duration="119000" />
       <workItem from="1564326229003" duration="1412000" />
       <workItem from="1564412560276" duration="15485000" />
-      <workItem from="1564617756477" duration="2865000" />
+      <workItem from="1564617756477" duration="5898000" />
     </task>
     <task id="LOCAL-00001" summary="mended ui">
       <created>1563487396454</created>
@@ -335,7 +328,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19762000" />
+    <option name="totallyTimeSpent" value="22795000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -420,13 +413,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="added sqldb" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="64" column="67" selection-start-line="64" selection-start-column="67" selection-end-line="64" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsregister/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-481">
@@ -550,24 +536,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/createTicket.php">
+    <entry file="file://$PROJECT_DIR$/speakers.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="-1486" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="58" column="34" selection-start-line="50" selection-start-column="28" selection-end-line="58" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/confirmPayment.html">
+    <entry file="file://$PROJECT_DIR$/php/createTicket.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="541" column="68" lean-forward="true" selection-start-line="541" selection-start-column="68" selection-end-line="541" selection-end-column="68" />
+        <state relative-caret-position="184">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/confirmapp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="63" column="154" selection-start-line="63" selection-start-column="154" selection-end-line="63" selection-end-column="154" />
+        <state relative-caret-position="362">
+          <caret line="67" column="227" selection-start-line="67" selection-start-column="227" selection-end-line="67" selection-end-column="227" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/confirmPayment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="369" column="129" selection-start-line="369" selection-start-column="129" selection-end-line="369" selection-end-column="129" />
         </state>
       </provider>
     </entry>
