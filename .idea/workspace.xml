@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9bb1c18b-894d-4dda-8bc0-7bec1c5f9c5b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/confirmPayment.html" beforeDir="false" afterPath="$PROJECT_DIR$/confirmPayment.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,26 +90,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/newsapp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/confirmPayment.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="485" column="82" lean-forward="true" selection-start-line="485" selection-start-column="82" selection-end-line="485" selection-end-column="82" />
+            <state relative-caret-position="313">
+              <caret line="23" column="190" selection-start-line="23" selection-start-column="190" selection-end-line="23" selection-end-column="190" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/confirmPayment.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="541" column="68" lean-forward="true" selection-start-line="541" selection-start-column="68" selection-end-line="541" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/confirmapp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+            <state relative-caret-position="223">
+              <caret line="63" column="154" selection-start-line="63" selection-start-column="154" selection-end-line="63" selection-end-column="154" />
             </state>
           </provider>
         </entry>
@@ -118,8 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/createTicket.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="12" selection-start-line="8" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="390">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
@@ -182,12 +181,12 @@
         <option value="$PROJECT_DIR$/jsregister/app.js" />
         <option value="$PROJECT_DIR$/php/mPesa/callback.php" />
         <option value="$PROJECT_DIR$/php/mPesa/payMpesa2.php" />
-        <option value="$PROJECT_DIR$/assets/js/newsapp.js" />
         <option value="$PROJECT_DIR$/php/confirmPayment.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/89fc7889-13df-4689-9e84-9a0eab9782cb/console.sql" />
-        <option value="$PROJECT_DIR$/php/createTicket.php" />
-        <option value="$PROJECT_DIR$/assets/js/confirmapp.js" />
+        <option value="$PROJECT_DIR$/assets/js/newsapp.js" />
         <option value="$PROJECT_DIR$/confirmPayment.html" />
+        <option value="$PROJECT_DIR$/assets/js/confirmapp.js" />
+        <option value="$PROJECT_DIR$/php/createTicket.php" />
       </list>
     </option>
   </component>
@@ -302,7 +301,7 @@
       <workItem from="1564325172945" duration="119000" />
       <workItem from="1564326229003" duration="1412000" />
       <workItem from="1564412560276" duration="15485000" />
-      <workItem from="1564617756477" duration="2186000" />
+      <workItem from="1564617756477" duration="2865000" />
     </task>
     <task id="LOCAL-00001" summary="mended ui">
       <created>1563487396454</created>
@@ -336,10 +335,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19083000" />
+    <option name="totallyTimeSpent" value="19762000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25767368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -359,7 +359,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="12" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -525,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/createTicket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" selection-start-line="8" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://89fc7889-13df-4689-9e84-9a0eab9782cb/schema/evento/table/Transactions">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="7a3a811d-cd24-4df1-9709-565713f9a154">
@@ -552,22 +545,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/newsapp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        <state relative-caret-position="313">
+          <caret line="23" column="190" selection-start-line="23" selection-start-column="190" selection-end-line="23" selection-end-column="190" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/confirmapp.js">
+    <entry file="file://$PROJECT_DIR$/php/createTicket.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/confirmPayment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="485" column="82" lean-forward="true" selection-start-line="485" selection-start-column="82" selection-end-line="485" selection-end-column="82" />
+        <state relative-caret-position="400">
+          <caret line="541" column="68" lean-forward="true" selection-start-line="541" selection-start-column="68" selection-end-line="541" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/confirmapp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="63" column="154" selection-start-line="63" selection-start-column="154" selection-end-line="63" selection-end-column="154" />
         </state>
       </provider>
     </entry>
