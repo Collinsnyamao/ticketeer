@@ -25,6 +25,7 @@ if ($result->num_rows > 0) {
                       <td>".$row['user_Email']."</td>
                       <td>".$row['user_Full_Names']."</td>
                       <td>".$row['user_Gender']."</td>
+                      <td><a href='deleteUsers.php?id=".$row['user_id']."'><i class='fa fa-trash'></i></a></td>
                     </tr>";
     }
 } else {

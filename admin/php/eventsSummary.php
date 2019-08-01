@@ -25,6 +25,7 @@ if ($result->num_rows > 0) {
                       <td>".$row['eventDate']."</td>
                       <td>".$row['eventPrice']."</td>
                       <td>".$row['eventTime']."</td>
+                      <td><a href='deleteEvents.php?id=".$row['eventId']."'><i class='fa fa-trash'></i></a></td>
                     </tr>";
     }
 } else {

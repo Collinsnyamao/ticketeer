@@ -52,13 +52,13 @@
               <p>Dashboard</p>
             </a>
           </li>
-          <!--<li class="nav-item ">
+          <li class="nav-item ">
             <a class="nav-link" href="user.html">
               <i class="material-icons">person</i>
               <p>User Profile</p>
             </a>
           </li>
-          <li class="nav-item ">
+          <!--<li class="nav-item ">
             <a class="nav-link" href="tables.html">
               <i class="material-icons">content_paste</i>
               <p>Table List</p>
@@ -295,6 +295,7 @@
                       <th>User Email</th>
                       <th>User Full Names</th>
                       <th>User Gender</th>
+                      <th> - </th>
                     </thead>
                     <tbody>
                       <?php require 'php/usersSummary.php'?>
@@ -371,17 +372,60 @@
                   <table class="table table-hover">
                     <thead class="text-warning">
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Salary</th>
-                    <th>Country</th>
+                    <th>m-Pesa code</th>
+                    <th>status</th>
+                    <th>amount</th>
+                    <th>timestamp(YYYYMMDDHHMMSS)</th>
+                    <th>phone Number</th>
                     </thead>
                     <tbody>
-                    <tr>
+                    <!--<tr>
                       <td>1</td>
                       <td>Dakota Rice</td>
                       <td>$36,738</td>
                       <td>Niger</td>
-                    </tr>
+                    </tr>-->
+
+                    <?php require 'php/transactionsSummary.php';?>
+
+
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+            <div class="row">
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-success">
+                  <h4 class="card-title">Tickets</h4>
+                  <p class="card-category">All Events</p>
+                </div>
+                <div class="card-body table-responsive">
+                  <table class="table table-hover">
+                    <thead class="text-warning">
+                    <th>ticket Owner</th>
+                    <th>owner Email</th>
+                    <th>ticket creation time</th>
+                    <th>payment Code</th>
+                    <th>Event Name</th>
+                    <th>ticket Quantity</th>
+                    </thead>
+                    <tbody>
+                    <!--<tr>
+                      <td>1</td>
+                      <td>Dakota Rice</td>
+                      <td>$36,738</td>
+                      <td>Niger</td>
+                    </tr>-->
+
+                    <?php require 'php/ticketSummary.php';?>
+
+
                     </tbody>
                   </table>
                 </div>
