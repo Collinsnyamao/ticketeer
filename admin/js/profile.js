@@ -105,7 +105,7 @@ firebase.auth().onAuthStateChanged(function(user) {
                             if (pPwd == pConfirmPwd) {
 
                                 if (validateEmail(pEmail)) {
-                                    createuser(pEmail,pPwd,user.uid);
+                                    createuser(pEmail,pPwd,user.uid,pFname,pLname);
                                 }else {
 
                                 }
