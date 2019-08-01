@@ -19,7 +19,7 @@ if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
 
         echo "<div class='event_box'>
-            <img src='".$row['eventImageUrl']."' style='height: 500px; width: 1110px;' alt='event'>
+            <img src='".$row['eventImageUrl']."' style='height: 400px; width: 1110px;' alt='event'>
             <div class='event_info'>
                 <div class='event_title'>
                     ".$row['eventName']."
