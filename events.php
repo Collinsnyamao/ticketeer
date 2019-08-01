@@ -71,12 +71,7 @@
                     <a class="nav-link " href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="usertag"></a>
-                </li>
-                <li class="search_btn">
-                    <a  href="#">
-                        <i class="ion-ios-search"></i>
-                    </a>
+                    <a class="nav-link " href="speakers.html"><i class="fa fa-plus"></i>&nbsp;Submit event</a>
                 </li>
             </ul>
         </div>

@@ -21,7 +21,7 @@
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Material Dashboard Dark Edition by Creative Tim
+    Evento Admin
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -41,8 +41,8 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-          Creative Tim
+      <div class="logo"><a href="" class="simple-text logo-normal">
+          Evento
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
@@ -110,7 +110,7 @@
             <span class="navbar-toggler-icon icon-bar"></span>
             <span class="navbar-toggler-icon icon-bar"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end">
+          <!--<div class="collapse navbar-collapse justify-content-end">
             <form class="navbar-form">
               <div class="input-group no-border">
                 <input type="text" value="" class="form-control" placeholder="Search...">
@@ -154,7 +154,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div>-->
         </div>
       </nav>
       <!-- End Navbar -->
@@ -262,7 +262,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+            <!--<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
               <div class="card card-stats">
                 <div class="card-header card-header-info card-header-icon">
                   <div class="card-icon">
@@ -277,7 +277,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>-->
           </div>
           <div class="row">
             <div class="col-lg-12 col-md-12">
@@ -440,7 +440,7 @@
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
-            <ul>
+            <!--<ul>
               <li>
                 <a href="https://www.creative-tim.com">
                   Creative Tim
@@ -461,11 +461,11 @@
                   Licenses
                 </a>
               </li>
-            </ul>
+            </ul>-->
           </nav>
           <div class="copyright float-right" id="date">
             , made with <i class="material-icons">favorite</i> by
-            <a href="https://www.creative-tim.com" target="_blank">Creative Tim</a> for a better web.
+            <a href="" target="_blank">Evento</a>
           </div>
         </div>
       </footer>

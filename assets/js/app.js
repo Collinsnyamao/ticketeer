@@ -21,6 +21,10 @@ function getShorter(userId, eventName, eventDate, eventTime, eventImageUrl,event
                 url: "php/addEvent.php",
                 success: function (response) {
                     console.log('response3: '+ response);
+                    document.getElementById('eventAlert').hidden = false;
+                    document.getElementById('eventAlert').classList.remove('alert-danger');
+                    document.getElementById('eventAlert').classList.add('alert-success');
+                    document.getElementById('eventAlert').innerHTML = 'data Added';
                 }
             });
 
@@ -64,6 +68,11 @@ firebase.auth().onAuthStateChanged(function(user) {
         $('#btnsubmitevent').on('click',function () {
 
             console.log('clicked');
+            document.getElementById('eventAlert').hidden = false;
+            document.getElementById('eventAlert').classList.remove('alert-danger');
+            document.getElementById('eventAlert').classList.remove('alert-success');
+            document.getElementById('eventAlert').classList.add('alert-info');
+            document.getElementById('eventAlert').innerHTML = 'Loading ...';
 
             var eventprice = document.getElementById('ticketprice').value;
             var eventName = document.getElementById('eventname').value;
@@ -82,6 +91,10 @@ firebase.auth().onAuthStateChanged(function(user) {
                 .then((url) => {
                     console.log(url);
                     console.log("done with upload!");
+                    document.getElementById('eventAlert').hidden = false;
+                    document.getElementById('eventAlert').classList.remove('alert-danger');
+                    document.getElementById('eventAlert').classList.add('alert-success');
+                    document.getElementById('eventAlert').innerHTML = 'Event Added';
                     writeUserData(user.uid,eventName,eventDate,eventTime,url,eventprice,eventdesc);
                 })
                 .catch(console.error);
