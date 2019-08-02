@@ -123,7 +123,7 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <label for="ticketprice">Event image</label>
+                        <label for="ticketprice">Event Price</label>
                         <input type="number" class="form-control" id="ticketprice" placeholder="Ticket Price" step="10" >
                     </div>
                 </div>
