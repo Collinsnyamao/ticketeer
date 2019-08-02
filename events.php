@@ -62,13 +62,7 @@
         <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
             <ul class=" nav navbar-nav menu">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="contact.html">Contact</a>
+                    <a class="nav-link active" href="events.php">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="speakers.php"><i class="fa fa-plus"></i>&nbsp;Submit event</a>
@@ -247,13 +241,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             <div class="col-12 col-md-6 ">
                 <ul class="footer_menu">
                     <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="events.html">Events</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                        <a href="events.php">Home</a>
                     </li>
                 </ul>
             </div>

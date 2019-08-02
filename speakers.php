@@ -47,19 +47,13 @@
         <div class="collapse navbar-collapse flex-sm-row-reverse" id="headernav">
             <ul class=" nav navbar-nav menu">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
+                    <a class="nav-link active" href="events.php">Home</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="events.html">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="contact.html">Contact</a>
-                </li>
-                <li class="search_btn">
+                <!--<li class="search_btn">
                     <a  href="#">
                         <i class="ion-ios-search"></i>
                     </a>
-                </li>
+                </li>-->
             </ul>
         </div>
     </div>
